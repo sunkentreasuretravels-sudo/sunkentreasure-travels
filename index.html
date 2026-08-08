@@ -1,1 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5">
+  <title>Sunken Treasure Travels · Global Advisory</title>
+  <!-- Fonts: clean serif + sans-serif -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
+    body {
+      background: #fcf9f4;
+      color: #1a262f;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ===== COLOR ===== */
+    :root {
+      --navy: #0b2a3b;
+      --teal: #1e4a5f;
+      --gold: #b28b5c;
+      --gold-light: #d9b882;
+      --sand: #f0ebe1;
+      --cream: #faf6ef;
+      --charcoal: #1a262f;
+      --white: #ffffff;
+      --border-light: #e2dcd2;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      color: var(--navy);
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      line-height: 1.1;
+    }
+    h2 {
+      font-size: 2.2rem;
+      margin-bottom: 1.5rem;
+      border-bottom: 3px solid var(--gold-light);
+      display: inline-block;
+      padding-bottom: 0.25rem;
+    }
+    h3 {
+      font-size: 1.5rem;
+      margin-top: 0.5rem;
+    }
+    .subhead {
+      font-size: 1.2rem;
+      color: var(--teal);
+      font-weight: 300;
+    }
+
+    /* ===== BUTTONS ===== */
+    .btn {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--white);
+      font-weight: 600;
+      padding: 0.9rem 2.4rem;
+      border-radius: 40px;
+      text-decoration: none;
+      transition: all 0.2s;
+      border: 1px solid transparent;
+      font-size: 0.95rem;
+      letter-spacing: 0.3px;
+    }
+    .btn:hover {
+      background: var(--navy);
+      color: var(--gold-light);
+      border-color: var(--gold-light);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(11,42,59,0.15);
+    }
+    .btn-outline {
+      background: transparent;
+      color: var(--navy);
+      border: 1px solid var(--navy);
+    }
+    .btn-outline:hover {
+      background: var(--navy);
+      color: var(--cream);
+      border-color: var(--navy);
+    }
+
+    /* ===== HEADER / NAV ===== */
+    header {
+      background: var(--white);
+      border-bottom: 1px solid var(--border-light);
+      padding: 0.8rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(4px);
+      background: rgba(255,255,255,0.94);
+    }
+    .nav-flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: var(--navy);
+      letter-spacing: -0.5px;
+    }
+    .logo span {
+      color: var(--gold);
+    }
+    .nav-links {
+      display: flex;
+      gap: 1.8rem;
+      flex-wrap: wrap;
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: var(--charcoal);
+      transition: 0.2s;
+      border-bottom: 2px solid transparent;
+      padding-bottom: 4px;
+    }
+    .nav-links a:hover {
+      color: var(--gold);
+      border-bottom-color: var(--gold);
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      background: linear-gradient(145deg, #f4eee6 0%, #e8dfd2 100%);
+      padding: 4rem 0 5rem;
+      border-bottom: 2px solid var(--gold-light);
+    }
+    .hero-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .hero h1 {
+      font-size: 3.2rem;
+      max-width: 800px;
+    }
+    .hero .tagline {
+      font-size: 1.3rem;
+      color: var(--teal);
+      font-weight: 300;
+      max-width: 700px;
+      margin: 0.5rem 0 1.5rem;
+    }
+    .hero-cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: center;
+    }
+    .hero-badge {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin-top: 1.5rem;
+      font-size: 0.9rem;
+      color: var(--navy);
+    }
+    .hero-badge span {
+      background: var(--white);
+      padding: 0.3rem 1rem;
+      border-radius: 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      border: 1px solid var(--border-light);
+    }
+
+    /* ===== SECTION ===== */
+    section {
+      padding: 4rem 0;
+      border-bottom: 1px solid var(--border-light);
+    }
+    .section-title {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    .section-title h2 {
+      border-bottom: none;
+      display: block;
+    }
+
+    /* ===== CONSULTING TIERS ===== */
+    .tier-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+    .tier-card {
+      background: var(--white);
+      padding: 2rem 1.5rem;
+      border-radius: 20px;
+      box-shadow: 0 6px 24px rgba(11,42,59,0.05);
+      border: 1px solid var(--border-light);
+      transition: all 0.25s;
+      display: flex;
+      flex-direction: column;
+    }
+    .tier-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--gold);
+      box-shadow: 0 16px 36px rgba(11,42,59,0.08);
+    }
+    .tier-card .price {
+      font-size: 1.9rem;
+      font-weight: 600;
+      color: var(--navy);
+      margin: 0.5rem 0 0.25rem;
+    }
+    .tier-card .price small {
+      font-size: 1rem;
+      font-weight: 400;
+      color: var(--teal);
+    }
+    .tier-card .btn {
+      margin-top: 1.2rem;
+      align-self: flex-start;
+      padding: 0.6rem 1.8rem;
+      font-size: 0.9rem;
+    }
+    .tier-card .note {
+      font-size: 0.85rem;
+      color: #4f5e69;
+      margin-top: 0.6rem;
+      font-style: italic;
+    }
+
+    /* ===== SERVICES & SPECIALTIES ===== */
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+      gap: 2rem;
+    }
+    .service-item {
+      background: var(--cream);
+      padding: 1.8rem 1.2rem;
+      border-radius: 16px;
+      border-left: 4px solid var(--gold);
+    }
+    .service-item h4 {
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      color: var(--navy);
+    }
+    .specialty-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin-top: 0.8rem;
+    }
+    .specialty-tags span {
+      background: var(--white);
+      padding: 0.2rem 1.2rem;
+      border-radius: 30px;
+      font-size: 0.85rem;
+      border: 1px solid var(--border-light);
+    }
+
+    /* ===== DESTINATIONS ===== */
+    .dest-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
+      gap: 1.8rem;
+      text-align: center;
+    }
+    .dest-card {
+      background: var(--white);
+      padding: 1.5rem 0.5rem;
+      border-radius: 40px 12px 12px 40px;
+      border: 1px solid var(--border-light);
+      font-weight: 500;
+      background: #f5f0e9;
+      box-shadow: inset 0 -2px 0 var(--gold-light);
+    }
+    .dest-card strong {
+      display: block;
+      font-size: 1.1rem;
+      color: var(--navy);
+    }
+
+    /* ===== ABOUT / PROCESS ===== */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.5rem;
+    }
+    .about-grid ul {
+      list-style: none;
+      margin-top: 0.5rem;
+    }
+    .about-grid li {
+      padding: 0.4rem 0;
+      border-bottom: 1px solid var(--border-light);
+      display: flex;
+      gap: 0.8rem;
+    }
+    .about-grid li::before {
+      content: "◆";
+      color: var(--gold);
+      font-size: 0.8rem;
+    }
+
+    .process-steps {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: space-between;
+      margin: 2rem 0 0;
+    }
+    .step {
+      flex: 1 1 160px;
+      background: var(--cream);
+      padding: 1.2rem;
+      border-radius: 30px 8px 8px 30px;
+      border-left: 6px solid var(--gold);
+    }
+    .step strong {
+      display: block;
+      font-size: 1.1rem;
+    }
+
+    /* ===== TESTIMONIALS ===== */
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+      gap: 2rem;
+    }
+    .testimonial {
+      background: var(--white);
+      padding: 1.8rem;
+      border-radius: 24px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+      border: 1px solid var(--border-light);
+      font-style: italic;
+    }
+    .testimonial .attribution {
+      margin-top: 1rem;
+      font-style: normal;
+      font-weight: 600;
+      color: var(--teal);
+    }
+
+    /* ===== CONTACT ===== */
+    .contact-flex {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3rem;
+      justify-content: space-between;
+      background: var(--cream);
+      padding: 2.5rem;
+      border-radius: 40px;
+    }
+    .contact-flex .info {
+      flex: 1 1 240px;
+    }
+    .contact-flex .info a {
+      color: var(--navy);
+      text-decoration: none;
+      font-weight: 500;
+      border-bottom: 1px dotted var(--gold);
+    }
+    .contact-flex .info a:hover {
+      color: var(--gold);
+    }
+    .contact-form {
+      flex: 2 1 340px;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 0.8rem 1rem;
+      margin: 0.3rem 0 1rem;
+      border: 1px solid var(--border-light);
+      border-radius: 30px;
+      font-family: 'Inter', sans-serif;
+      background: var(--white);
+    }
+    .contact-form textarea {
+      border-radius: 20px;
+      min-height: 100px;
+    }
+    .contact-form .btn {
+      border-radius: 40px;
+      border: none;
+      cursor: pointer;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: var(--navy);
+      color: #d4d9dd;
+      padding: 2.5rem 0;
+      margin-top: 0;
+    }
+    footer .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+    footer .logo {
+      color: var(--cream);
+      font-size: 1.4rem;
+    }
+    footer .logo span {
+      color: var(--gold-light);
+    }
+    footer .creds {
+      display: flex;
+      gap: 1.8rem;
+      flex-wrap: wrap;
+      font-size: 0.9rem;
+    }
+    footer .creds span {
+      border-right: 1px solid #3e5a69;
+      padding-right: 1rem;
+    }
+    footer .creds span:last-child {
+      border: none;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 780px) {
+      h1 { font-size: 2.2rem; }
+      .hero h1 { font-size: 2.4rem; }
+      .nav-flex { flex-direction: column; gap: 0.8rem; }
+      .nav-links { gap: 1rem; justify-content: center; }
+      .about-grid { grid-template-columns: 1fr; }
+      .contact-flex { flex-direction: column; }
+      .tier-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 480px) {
+      .tier-grid { grid-template-columns: 1fr; }
+      .process-steps { flex-direction: column; }
+      .dest-grid { grid-template-columns: 1fr 1fr; }
+      .hero-cta { flex-direction: column; align-items: flex-start; }
+    }
+
+    /* ===== IMAGE PLACEHOLDERS ===== */
+    .img-placeholder {
+      background: #e6ddd2;
+      border-radius: 24px;
+      padding: 2rem 1rem;
+      text-align: center;
+      color: var(--teal);
+      border: 1px dashed var(--gold);
+      font-weight: 400;
+      margin: 0.5rem 0;
+      min-height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+    }
+    .img-placeholder.large {
+      min-height: 160px;
+    }
+
+    /* utility */
+    .mt-2 { margin-top: 2rem; }
+    .mb-1 { margin-bottom: 1rem; }
+    .text-center { text-align: center; }
+    .flex-center { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+  </style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+  <div class="container nav-flex">
+    <div class="logo">Sunken<span>Treasure</span> Travels</div>
+    <nav class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#destinations">Destinations</a>
+      <a href="#consulting">Consulting</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <h1>Structured global travel,<br>hands‑off execution.</h1>
+      <p class="tagline">Sunken Treasure Travels Ltd — advisory for professionals, founders, and culturally fluent travelers.</p>
+      <div class="hero-cta">
+        <a href="#consulting" class="btn">Begin consultation</a>
+        <a href="#services" class="btn btn-outline">Explore services</a>
+      </div>
+      <div class="hero-badge">
+        <span>Virgin Voyages Gold Tier</span>
+        <span>JCI Member</span>
+        <span>Cultural fluency · Caribbean · Africa · Latin America</span>
+      </div>
+    </div>
+    <!-- decorative image placeholder -->
+    <div class="img-placeholder large">[ Hero image: luxury travel / ocean / cultural moment ]</div>
+  </div>
+</section>
+
+<!-- ===== CONSULTING TIERS (quick view) ===== -->
+<section id="consulting">
+  <div class="container">
+    <div class="section-title">
+      <h2>Consulting tiers</h2>
+      <p class="subhead">Structured alignment before execution. Fees apply toward full planning.</p>
+    </div>
+    <div class="tier-grid">
+      <div class="tier-card">
+        <h4>Strategic Consultation</h4>
+        <div class="price">$100</div>
+        <p>Clarity & direction. Eliminate uncertainty, align destination & timing.</p>
+        <a href="#" class="btn">Book</a>
+        <div class="note">applied to full service</div>
+      </div>
+      <div class="tier-card">
+        <h4>Structured Planning Session</h4>
+        <div class="price">$200</div>
+        <p>Build your travel framework: routing, flow, experience components.</p>
+        <a href="#" class="btn">Book</a>
+        <div class="note">applied to full service</div>
+      </div>
+      <div class="tier-card">
+        <h4>Full Design & Execution</h4>
+        <div class="price">$400</div>
+        <p>Comprehensive framework: destination flow, timing, complete system.</p>
+        <a href="#" class="btn">Book</a>
+        <div class="note">applied to full service</div>
+      </div>
+      <div class="tier-card">
+        <h4>Premium Elite Arrival</h4>
+        <div class="price">$650</div>
+        <p>Discreet, private coordination. Controlled arrival & local access.</p>
+        <a href="#" class="btn">Book</a>
+        <div class="note">applied to full service</div>
+      </div>
+    </div>
+    <p class="text-center mt-2" style="color: var(--teal);"><em>All consultation fees credited toward full‑service travel planning.</em></p>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section id="services">
+  <div class="container">
+    <div class="section-title">
+      <h2>Core services & specialties</h2>
+    </div>
+    <div class="service-grid">
+      <div class="service-item"><h4>Flight & routing strategy</h4><p>Optimized air, multi‑city coordination.</p></div>
+      <div class="service-item"><h4>Hotel & villa reservations</h4><p>Boutique, luxury, and curated stays.</p></div>
+      <div class="service-item"><h4>Cruise & group inventory</h4><p>Royal Caribbean, Carnival, Disney, Virgin.</p></div>
+      <div class="service-item"><h4>Event & festival positioning</h4><p>Carnival, J'ouvert, cultural access.</p></div>
+      <div class="service-item"><h4>Safari & expedition design</h4><p>Tanzania, Kenya, Zambia — lodges & guides.</p></div>
+      <div class="service-item"><h4>Private transfers & ground logistics</h4><p>Seamless arrival, local movement.</p></div>
+      <div class="service-item"><h4>Visa guidance</h4><p>Structured documentation & timing.</p></div>
+      <div class="service-item"><h4>Discreet coordination</h4><p>Confidential handling for high‑net‑worth.</p></div>
+    </div>
+
+    <div class="mt-2">
+      <h3 style="font-family: 'Inter', sans-serif; font-weight: 500;">Specialty areas</h3>
+      <div class="specialty-tags">
+        <span>Conference & Delegation (JCI)</span>
+        <span>Cultural / Diaspora (Caribbean)</span>
+        <span>African Safari Circuits</span>
+        <span>Latin America Immersion</span>
+        <span>Premium Elite Arrival</span>
+        <span>Celebration at Sea</span>
+        <span>Tintalting Singles Voyages</span>
+        <span>Fashion at Sea™</span>
+      </div>
+      <div class="img-placeholder mt-2">[ Image: conference / cultural event / safari landscape ]</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DESTINATIONS ===== -->
+<section id="destinations">
+  <div class="container">
+    <div class="section-title">
+      <h2>Destinations</h2>
+    </div>
+    <div class="dest-grid">
+      <div class="dest-card"><strong>Caribbean</strong> Trinidad · Barbados · Antigua · Aruba</div>
+      <div class="dest-card"><strong>Africa</strong> Tanzania · Kenya · Zambia</div>
+      <div class="dest-card"><strong>Latin America</strong> Colombia · Brazil</div>
+      <div class="dest-card"><strong>Global conferences</strong> JCI World Congress · Americas · Summits</div>
+    </div>
+    <div class="img-placeholder mt-2">[ Destination imagery: carnival, safari, beach, city ]</div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about">
+  <div class="container">
+    <div class="section-title">
+      <h2>About Sunken Treasure Travels</h2>
+    </div>
+    <div class="about-grid">
+      <div>
+        <h3>Structured travel for the globally mobile</h3>
+        <p>We manage complexity so you focus on purpose, presence, and priorities. Our clients value early positioning, payment scheduling, organized documentation, and hands‑off execution.</p>
+        <ul>
+          <li>Coordinated flights, hotels, ground logistics</li>
+          <li>Early positioning for high‑demand inventory</li>
+          <li>Structured group alignment for delegations</li>
+          <li>Clear billing & payment scheduling</li>
+          <li>Cultural awareness & destination fluency</li>
+        </ul>
+        <div style="margin-top: 1.2rem; background: var(--cream); padding: 1rem; border-radius: 20px;">
+          <strong>Credentials</strong><br>
+          Gold Tier First Mate — Virgin Voyages<br>
+          JCI Member · Conference & Delegation Specialist<br>
+          Certified · Royal Caribbean, Carnival, Disney
+        </div>
+      </div>
+      <div>
+        <h3>Our process</h3>
+        <div class="process-steps">
+          <div class="step"><strong>1. Consultation</strong> Scope & alignment</div>
+          <div class="step"><strong>2. Proposal</strong> Structured plan</div>
+          <div class="step"><strong>3. Inventory & payment</strong> Securing & scheduling</div>
+          <div class="step"><strong>4. Execution</strong> Oversight & delivery</div>
+        </div>
+        <p style="margin-top: 1.5rem;">Movement without structure creates friction. We remove friction.</p>
+        <div class="img-placeholder" style="min-height:80px;">[ About image: professional / travel advisory ]</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section style="background: var(--cream);">
+  <div class="container">
+    <div class="section-title">
+      <h2>What travelers say</h2>
+    </div>
+    <div class="testimonial-grid">
+      <div class="testimonial">“Sunken Treasure Travels Ltd secured prime Carnival positioning months before inventory tightened. Every detail was handled.” <div class="attribution">— Cultural traveler, Trinidad</div></div>
+      <div class="testimonial">“Our conference travel was structured flawlessly — flights, transfers, accommodations, all aligned.” <div class="attribution">— Delegation lead, JCI</div></div>
+      <div class="testimonial">“The safari design was seamless. Private guides, lodge sequencing, everything timed perfectly.” <div class="attribution">— Safari client, Tanzania</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+  <div class="container">
+    <div class="section-title">
+      <h2>Begin structured movement</h2>
+    </div>
+    <div class="contact-flex">
+      <div class="info">
+        <h3>Connect directly</h3>
+        <p><strong>WhatsApp</strong><br><a href="https://wa.me/16782214797" target="_blank">+1.678.221.4797</a></p>
+        <p><strong>Email</strong><br><a href="mailto:info@sunkentreasuretravels.com">info@sunkentreasuretravels.com</a></p>
+        <p style="margin-top: 1.5rem;"><em>Consultation fees apply toward full planning.</em></p>
+        <div style="display: flex; gap: 0.8rem; flex-wrap: wrap; margin-top: 1rem;">
+          <a href="https://wa.me/16782214797" class="btn" style="padding: 0.6rem 1.8rem;">WhatsApp</a>
+          <a href="mailto:info@sunkentreasuretravels.com" class="btn btn-outline" style="padding: 0.6rem 1.8rem;">Email</a>
+        </div>
+      </div>
+      <div class="contact-form">
+        <h4>Inquiry form</h4>
+        <form>
+          <input type="text" placeholder="Full name" aria-label="Name">
+          <input type="email" placeholder="Email address" aria-label="Email">
+          <input type="tel" placeholder="Phone (optional)" aria-label="Phone">
+          <textarea placeholder="Tell us about your travel needs... (destination, dates, group size, etc.)"></textarea>
+          <button type="submit" class="btn">Send inquiry</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="logo">Sunken<span>Treasure</span> Travels Ltd</div>
+    <div class="creds">
+      <span>Virgin Voyages Gold Tier</span>
+      <span>JCI Member</span>
+      <span>© 2026</span>
+    </div>
+  </div>
+  <div class="container" style="margin-top: 1rem; font-size: 0.85rem; border-top: 1px solid #2e4a5a; padding-top: 1.2rem; flex-wrap: wrap; justify-content: center; gap: 1.5rem;">
+    <span>Structured international travel advisory</span>
+    <span>Caribbean · Africa · Latin America</span>
+    <span>Discreet · Culturally fluent</span>
+  </div>
+</footer>
+
+<!-- small note: all placeholder images use descriptive alt text per project -->
+</body>
+</html>
