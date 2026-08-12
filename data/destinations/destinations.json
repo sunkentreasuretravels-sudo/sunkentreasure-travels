@@ -1,1 +1,50 @@
-
+[
+  {
+    "id": "caribbean",
+    "name": "Caribbean",
+    "category": "Culture & Festivals",
+    "image": "/assets/images/destinations/caribbean-carnival.png",
+    "description": "Carnival, culture, island escapes and structured event travel across the Caribbean.",
+    "status": "featured"
+  },
+  {
+    "id": "africa",
+    "name": "Africa",
+    "category": "Safari & Immersion",
+    "image": "/assets/images/destinations/africa-safari.png",
+    "description": "Safari circuits, cultural immersion, lodge sequencing and guided experiences.",
+    "status": "featured"
+  },
+  {
+    "id": "latin-america",
+    "name": "Latin America",
+    "category": "Global Immersion",
+    "image": "/assets/images/destinations/latin-america-culture.png",
+    "description": "Boutique international itineraries with cultural pacing and private ground coordination.",
+    "status": "featured"
+  },
+  {
+    "id": "cruise",
+    "name": "Cruise & Ocean",
+    "category": "Cruise Travel",
+    "image": "/assets/images/cruises/cruise-ship-business-gathering.png",
+    "description": "Curated sailings, group voyages, inventory positioning and onboard experiences.",
+    "status": "featured"
+  },
+  {
+    "id": "professional",
+    "name": "Global Conferences",
+    "category": "Professional Travel",
+    "image": "/assets/images/destinations/business-conference.png",
+    "description": "Delegations, leadership forums, conferences and business travel infrastructure.",
+    "status": "featured"
+  },
+  {
+    "id": "diaspora",
+    "name": "Cultural & Diaspora",
+    "category": "Heritage & Culture",
+    "image": "/assets/images/destinations/diaspora-culture.png",
+    "description": "Heritage-centered travel, community experiences and culturally significant destinations.",
+    "status": "featured"
+  }
+]

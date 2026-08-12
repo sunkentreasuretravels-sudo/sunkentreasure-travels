@@ -1,1 +1,1 @@
-
+Terms and conditions content to be finalized before launch.
