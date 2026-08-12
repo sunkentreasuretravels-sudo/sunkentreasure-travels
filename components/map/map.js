@@ -29,14 +29,7 @@ svg.append("g").selectAll("path")
   .attr("d",path);
 
 const pointLayer = svg.append("g");
-const destinationPoints = {
-  caribbean:[-61.0,15.0],
-  africa:[25.0,2.0],
-  "latin-america":[-60.0,-15.0],
-  cruise:[-20.0,25.0],
-  professional:[10.0,45.0],
-  diaspora:[-20.0,15.0]
-};
+const destinationPoints = Object.fromEntries(destinations.map(item => [item.id, item.coordinates]));
 
 const preview = root.querySelector("[data-map-preview]");
 const previewImg = root.querySelector("[data-map-image]");
@@ -62,25 +55,22 @@ function closePreview(){
 root.querySelector("[data-map-close]").addEventListener("click",closePreview);
 
 destinations.forEach(item=>{
-  const coords = destinationPoints[item.id];
-  if(!coords) return;
-  const [x,y]=projection(coords);
+  const coords=destinationPoints[item.id]; if(!coords) return;
+  const [x,y]=projection(coords), type=item.type||"destination";
   const g=pointLayer.append("g").attr("transform",`translate(${x},${y})`);
-  g.append("circle").attr("class","map-point-pulse").attr("r",11);
-  g.append("circle").attr("class","map-point").attr("r",5.5)
-    .attr("tabindex",0)
-    .on("mouseenter",()=>openPreview(item))
-    .on("focus",()=>openPreview(item))
-    .on("click",()=>openPreview(item));
+  g.append("circle").attr("class",`map-point-pulse ${type}-pulse`).attr("r",type==="hub"?15:11);
+  g.append("circle").attr("class",`map-point ${type}-point`).attr("r",type==="hub"?7:5.5)
+   .attr("tabindex",0).attr("aria-label",item.name)
+   .on("mouseenter",()=>openPreview(item)).on("focus",()=>openPreview(item)).on("click",()=>openPreview(item));
+  if(type==="hub") g.append("circle").attr("r",11).attr("fill","none").attr("stroke","#8bd7ec").attr("stroke-width",1.5);
 });
-
 events.forEach(event=>{
-  const [x,y]=projection(event.coordinates);
-  if(!x || !y) return;
+  const [x,y]=projection(event.coordinates); if(!Number.isFinite(x)||!Number.isFinite(y)) return;
   const g=pointLayer.append("g").attr("transform",`translate(${x},${y})`);
-  g.append("circle").attr("class","map-event-dot").attr("r",5).on("mouseenter",()=>openPreview(event,"event")).on("click",()=>openPreview(event,"event"));
+  g.append("circle").attr("class","map-point-pulse event-pulse").attr("r",13);
+  g.append("circle").attr("class","map-point event-point").attr("r",6).attr("tabindex",0).attr("aria-label",event.name)
+   .on("mouseenter",()=>openPreview(event,"event")).on("focus",()=>openPreview(event,"event")).on("click",()=>openPreview(event,"event"));
 });
-
 const zoom = d3.zoom().scaleExtent([1,4]).on("zoom",e=>pointLayer.attr("transform",e.transform));
 svg.call(zoom);
 
