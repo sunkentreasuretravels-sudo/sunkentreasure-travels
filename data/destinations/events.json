@@ -1,0 +1,47 @@
+[
+  {
+    "id": "antigua-carnival",
+    "name": "Antigua Carnival",
+    "location": "Antigua & Barbuda",
+    "category": "Culture & Festival",
+    "coordinates": [
+      -61.8,
+      17.1
+    ],
+    "description": "A major Caribbean cultural celebration suitable for structured event and festival travel.",
+    "image": "/assets/images/destinations/caribbean-carnival.png",
+    "status": "featured",
+    "approved": true,
+    "url": "/pages/specialty/destinations.html"
+  },
+  {
+    "id": "toronto-caribbean-carnival",
+    "name": "Toronto Caribbean Carnival",
+    "location": "Toronto, Canada",
+    "category": "Culture & Festival",
+    "coordinates": [
+      -79.4,
+      43.7
+    ],
+    "description": "A major summer Caribbean cultural celebration in Canada.",
+    "image": "/assets/images/destinations/caribbean-carnival.png",
+    "status": "featured",
+    "approved": true,
+    "url": "/pages/specialty/destinations.html"
+  },
+  {
+    "id": "rio-carnival",
+    "name": "Rio Carnival",
+    "location": "Rio de Janeiro, Brazil",
+    "category": "Culture & Festival",
+    "coordinates": [
+      -43.2,
+      -22.9
+    ],
+    "description": "One of the world's most recognizable carnival experiences.",
+    "image": "/assets/images/destinations/caribbean-carnival.png",
+    "status": "featured",
+    "approved": true,
+    "url": "/pages/specialty/destinations.html"
+  }
+]

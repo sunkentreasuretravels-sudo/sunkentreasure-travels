@@ -6,6 +6,18 @@
 <title>Sunken Treasure Travels® | Global Travel Advisory & Cultural Experience</title>
 <meta name="description" content="Sunken Treasure Travels® is a structured international travel advisory for professionals, founders, cultural communities and globally mobile travelers.">
 <link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/components/map/map.css">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"TravelAgency",
+  "name":"Sunken Treasure Travels® Ltd",
+  "url":"https://sunkentreasuretravels.com",
+  "email":"info@SunkenTreasureTravels.com",
+  "telephone":"+1.678.221.4797",
+  "description":"Global Travel Advisory & Cultural Experience Firm"
+}
+</script>
 </head>
 <body>
 <header class="site-nav">
@@ -41,6 +53,39 @@
    <article class="world-card"><img src="/assets/images/destinations/latin-america-culture.png" alt="Latin American cultural experience"><div class="world-copy"><h3>Global Immersion</h3><p>Colombia, Brazil and culturally significant destinations.</p></div></article>
    <article class="world-card"><img src="/assets/images/destinations/business-conference.png" alt="International conference travel"><div class="world-copy"><h3>Professional Movement</h3><p>Delegations, conferences and leadership travel.</p></div></article>
    <article class="world-card"><img src="/assets/images/destinations/diaspora-culture.png" alt="Cultural and diaspora travel"><div class="world-copy"><h3>Heritage & Diaspora</h3><p>Travel connected to history, community and identity.</p></div></article>
+  </div>
+ </div>
+</section>
+
+
+<section id="map" class="section worlds map-section">
+ <div class="container">
+  <div class="eyebrow">Explore the world</div>
+  <h2>Where will your curiosity take you?</h2>
+  <p class="lead">Hover, explore and discover destinations and travel-worthy events. The world map is designed to grow with Sunken Treasure Travels® as new experiences are approved and added.</p>
+  <div class="world-map-shell" data-world-map>
+   <div class="world-map-header">
+    <div>
+     <div class="world-map-kicker">Sunken Treasure Travels®</div>
+     <div class="world-map-title">A world in motion.</div>
+    </div>
+    <div class="world-map-help">Hover a destination or event marker. Click to explore. Drag and zoom the map to travel farther.</div>
+   </div>
+   <svg class="world-map-canvas"></svg>
+   <div class="map-preview" data-map-preview aria-hidden="true">
+    <img data-map-image src="/assets/images/destinations/latin-america-culture.png" alt="">
+    <div class="map-preview-copy">
+     <div class="map-preview-kicker" data-map-kicker></div>
+     <h3 data-map-title></h3>
+     <p data-map-text></p>
+     <div class="map-preview-actions">
+      <a class="primary" data-map-link href="#">Explore</a>
+      <button type="button" data-map-close>Back to map</button>
+     </div>
+    </div>
+   </div>
+   <div class="map-legend"><span><i class="map-dot"></i> Destination</span><span><i class="map-event-dot"></i> Event</span></div>
+   <button class="map-sound" type="button" data-map-sound>Sound Off</button>
   </div>
  </div>
 </section>
@@ -120,5 +165,6 @@
  </div>
 </footer>
 <script src="/assets/js/main.js"></script>
+<script type="module" src="/components/map/map.js"></script>
 </body>
 </html>
