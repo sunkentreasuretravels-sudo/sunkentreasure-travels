@@ -12,7 +12,8 @@
     "description": "A major Caribbean cultural celebration.",
     "image": "/assets/images/destinations/caribbean-carnival.png",
     "approved": true,
-    "url": "/pages/specialty/destinations.html"
+    "url": "/pages/explore.html?type=event&id=antigua-carnival",
+    "experienceIds": []
   },
   {
     "id": "toronto-caribbean-carnival",
@@ -27,7 +28,8 @@
     "description": "A major summer Caribbean cultural celebration in Canada.",
     "image": "/assets/images/destinations/caribbean-carnival.png",
     "approved": true,
-    "url": "/pages/specialty/destinations.html"
+    "url": "/pages/explore.html?type=event&id=toronto-caribbean-carnival",
+    "experienceIds": []
   },
   {
     "id": "rio-carnival",
@@ -42,6 +44,7 @@
     "description": "One of the world's most recognizable carnival experiences.",
     "image": "/assets/images/destinations/caribbean-carnival.png",
     "approved": true,
-    "url": "/pages/specialty/destinations.html"
+    "url": "/pages/explore.html?type=event&id=rio-carnival",
+    "experienceIds": []
   }
 ]

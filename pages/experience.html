@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Experience | Sunken Treasure Travels®</title>
+<link rel="stylesheet" href="/assets/css/reset.css">
+<link rel="stylesheet" href="/assets/css/variables.css">
+<link rel="stylesheet" href="/assets/css/typography.css">
+<link rel="stylesheet" href="/assets/css/layout.css">
+<style>
+body{background:#061522;color:#fff;font-family:system-ui,sans-serif}.experience-shell{max-width:1100px;margin:auto;padding:70px 24px}.back{color:#8fcce2;text-decoration:none}.eyebrow{margin-top:70px;color:#8fcce2;text-transform:uppercase;letter-spacing:.16em;font-size:.75rem}.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}.hero h1{font-family:"Playfair Display",serif;font-size:clamp(2.7rem,7vw,6rem);line-height:.95;margin:.25em 0}.hero p{font-size:1.05rem;line-height:1.7;color:rgba(255,255,255,.72);max-width:650px}.hero img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:24px}.notice{margin-top:50px;border:1px solid rgba(255,255,255,.14);border-radius:18px;padding:24px;background:rgba(255,255,255,.04)}@media(max-width:760px){.hero{grid-template-columns:1fr}.experience-shell{padding:35px 18px}}
+</style>
+</head><body><main class="experience-shell"><a class="back" href="/index.html#map">← Back to the world map</a><div id="experience"></div></main><script type="module">
+const id=new URLSearchParams(location.search).get('id');
+const data=await fetch('/data/experiences/experiences.json').then(r=>r.json());
+const item=data.find(x=>x.id===id);
+const root=document.querySelector('#experience');
+if(!item){root.innerHTML='<div class="eyebrow">Experience</div><h1>Experience not found</h1><p>This experience has not been published yet.</p>';}
+else{
+ document.title=`${item.name} | Sunken Treasure Travels®`;
+ root.innerHTML=`<div class="eyebrow">${item.type.replaceAll('-',' ')} · ${item.location}</div><section class="hero"><div><h1>${item.name}</h1><p>${item.description}</p><div class="notice"><strong>Experience status:</strong> ${item.status}.<br><br>This experience has its own digital space inside the Sunken Treasure Travels® architecture. It can later move to a dedicated domain without rebuilding the experience.</div><div style="margin-top:22px"><a class="back" href="/index.html#map">Explore more of the world →</a></div></div><img src="${item.image}" alt="${item.name}"></section>`;
+}
+</script></body></html>

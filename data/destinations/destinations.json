@@ -8,9 +8,12 @@
       -61.8,
       17.1
     ],
-    "description": "Antigua & Barbuda is a featured Sunken Treasure Travels\u00ae destination for curated travel planning and experiences.",
+    "description": "Antigua & Barbuda is a featured Sunken Treasure Travels® destination for curated travel planning and experiences.",
     "image": "/assets/images/destinations/latin-america-culture.png",
-    "url": "/pages/specialty/destinations.html"
+    "url": "/pages/explore.html?type=destination&id=antigua-barbuda",
+    "experienceIds": [
+      "the-orange-pair"
+    ]
   },
   {
     "id": "barbados",
@@ -21,9 +24,9 @@
       -59.6,
       13.2
     ],
-    "description": "Barbados is a featured Sunken Treasure Travels\u00ae destination for curated travel planning and experiences.",
+    "description": "Barbados is a featured Sunken Treasure Travels® destination for curated travel planning and experiences.",
     "image": "/assets/images/destinations/latin-america-culture.png",
-    "url": "/pages/specialty/destinations.html"
+    "url": "/pages/explore.html?type=destination&id=barbados"
   },
   {
     "id": "trinidad-tobago",
@@ -34,9 +37,9 @@
       -61.2,
       10.5
     ],
-    "description": "Trinidad & Tobago is a featured Sunken Treasure Travels\u00ae destination for curated travel planning and experiences.",
+    "description": "Trinidad & Tobago is a featured Sunken Treasure Travels® destination for curated travel planning and experiences.",
     "image": "/assets/images/destinations/latin-america-culture.png",
-    "url": "/pages/specialty/destinations.html"
+    "url": "/pages/explore.html?type=destination&id=trinidad-tobago"
   },
   {
     "id": "jamaica",
@@ -47,9 +50,9 @@
       -77.3,
       18.1
     ],
-    "description": "Jamaica is a featured Sunken Treasure Travels\u00ae destination for curated travel planning and experiences.",
+    "description": "Jamaica is a featured Sunken Treasure Travels® destination for curated travel planning and experiences.",
     "image": "/assets/images/destinations/latin-america-culture.png",
-    "url": "/pages/specialty/destinations.html"
+    "url": "/pages/explore.html?type=destination&id=jamaica"
   },
   {
     "id": "bahamas",
@@ -60,9 +63,9 @@
       -77.3,
       25.0
     ],
-    "description": "The Bahamas is a featured Sunken Treasure Travels\u00ae destination for curated travel planning and experiences.",
+    "description": "The Bahamas is a featured Sunken Treasure Travels® destination for curated travel planning and experiences.",
     "image": "/assets/images/destinations/latin-america-culture.png",
-    "url": "/pages/specialty/destinations.html"
+    "url": "/pages/explore.html?type=destination&id=bahamas"
   },
   {
     "id": "saint-lucia",
@@ -73,9 +76,9 @@
       -60.98,
       13.91
     ],
-    "description": "Saint Lucia is a featured Sunken Treasure Travels\u00ae destination for curated travel planning and experiences.",
+    "description": "Saint Lucia is a featured Sunken Treasure Travels® destination for curated travel planning and experiences.",
     "image": "/assets/images/destinations/latin-america-culture.png",
-    "url": "/pages/specialty/destinations.html"
+    "url": "/pages/explore.html?type=destination&id=saint-lucia"
   },
   {
     "id": "grenada",
@@ -86,9 +89,9 @@
       -61.68,
       12.12
     ],
-    "description": "Grenada is a featured Sunken Treasure Travels\u00ae destination for curated travel planning and experiences.",
+    "description": "Grenada is a featured Sunken Treasure Travels® destination for curated travel planning and experiences.",
     "image": "/assets/images/destinations/latin-america-culture.png",
-    "url": "/pages/specialty/destinations.html"
+    "url": "/pages/explore.html?type=destination&id=grenada"
   },
   {
     "id": "dominica",
@@ -99,9 +102,9 @@
       -61.37,
       15.42
     ],
-    "description": "Dominica is a featured Sunken Treasure Travels\u00ae destination for curated travel planning and experiences.",
+    "description": "Dominica is a featured Sunken Treasure Travels® destination for curated travel planning and experiences.",
     "image": "/assets/images/destinations/latin-america-culture.png",
-    "url": "/pages/specialty/destinations.html"
+    "url": "/pages/explore.html?type=destination&id=dominica"
   },
   {
     "id": "aruba",
@@ -112,22 +115,22 @@
       -70.0,
       12.5
     ],
-    "description": "Aruba is a featured Sunken Treasure Travels\u00ae destination for curated travel planning and experiences.",
+    "description": "Aruba is a featured Sunken Treasure Travels® destination for curated travel planning and experiences.",
     "image": "/assets/images/destinations/latin-america-culture.png",
-    "url": "/pages/specialty/destinations.html"
+    "url": "/pages/explore.html?type=destination&id=aruba"
   },
   {
     "id": "curacao",
-    "name": "Cura\u00e7ao",
+    "name": "Curaçao",
     "category": "Destination",
     "type": "destination",
     "coordinates": [
       -68.99,
       12.17
     ],
-    "description": "Cura\u00e7ao is a featured Sunken Treasure Travels\u00ae destination for curated travel planning and experiences.",
+    "description": "Curaçao is a featured Sunken Treasure Travels® destination for curated travel planning and experiences.",
     "image": "/assets/images/destinations/latin-america-culture.png",
-    "url": "/pages/specialty/destinations.html"
+    "url": "/pages/explore.html?type=destination&id=curacao"
   },
   {
     "id": "puerto-rico",
@@ -138,9 +141,9 @@
       -66.59,
       18.22
     ],
-    "description": "Puerto Rico is a featured Sunken Treasure Travels\u00ae destination for curated travel planning and experiences.",
+    "description": "Puerto Rico is a featured Sunken Treasure Travels® destination for curated travel planning and experiences.",
     "image": "/assets/images/destinations/latin-america-culture.png",
-    "url": "/pages/specialty/destinations.html"
+    "url": "/pages/explore.html?type=destination&id=puerto-rico"
   },
   {
     "id": "usvi",
@@ -151,9 +154,9 @@
       -64.9,
       18.3
     ],
-    "description": "U.S. Virgin Islands is a featured Sunken Treasure Travels\u00ae destination for curated travel planning and experiences.",
+    "description": "U.S. Virgin Islands is a featured Sunken Treasure Travels® destination for curated travel planning and experiences.",
     "image": "/assets/images/destinations/latin-america-culture.png",
-    "url": "/pages/specialty/destinations.html"
+    "url": "/pages/explore.html?type=destination&id=usvi"
   },
   {
     "id": "miami",
@@ -164,9 +167,9 @@
       -80.19,
       25.76
     ],
-    "description": "Miami is a featured Sunken Treasure Travels\u00ae hub for curated travel planning and experiences.",
+    "description": "Miami is a featured Sunken Treasure Travels® hub for curated travel planning and experiences.",
     "image": "/assets/images/destinations/latin-america-culture.png",
-    "url": "/pages/specialty/destinations.html"
+    "url": "/pages/explore.html?type=destination&id=miami"
   },
   {
     "id": "fort-lauderdale",
@@ -177,9 +180,9 @@
       -80.14,
       26.12
     ],
-    "description": "Fort Lauderdale is a featured Sunken Treasure Travels\u00ae hub for curated travel planning and experiences.",
+    "description": "Fort Lauderdale is a featured Sunken Treasure Travels® hub for curated travel planning and experiences.",
     "image": "/assets/images/destinations/latin-america-culture.png",
-    "url": "/pages/specialty/destinations.html"
+    "url": "/pages/explore.html?type=destination&id=fort-lauderdale"
   },
   {
     "id": "orlando",
@@ -190,9 +193,9 @@
       -81.38,
       28.54
     ],
-    "description": "Orlando is a featured Sunken Treasure Travels\u00ae hub for curated travel planning and experiences.",
+    "description": "Orlando is a featured Sunken Treasure Travels® hub for curated travel planning and experiences.",
     "image": "/assets/images/destinations/latin-america-culture.png",
-    "url": "/pages/specialty/destinations.html"
+    "url": "/pages/explore.html?type=destination&id=orlando"
   },
   {
     "id": "new-orleans",
@@ -203,9 +206,9 @@
       -90.07,
       29.95
     ],
-    "description": "New Orleans is a featured Sunken Treasure Travels\u00ae hub for curated travel planning and experiences.",
+    "description": "New Orleans is a featured Sunken Treasure Travels® hub for curated travel planning and experiences.",
     "image": "/assets/images/destinations/latin-america-culture.png",
-    "url": "/pages/specialty/destinations.html"
+    "url": "/pages/explore.html?type=destination&id=new-orleans"
   },
   {
     "id": "galveston",
@@ -216,9 +219,9 @@
       -94.8,
       29.3
     ],
-    "description": "Galveston / Houston is a featured Sunken Treasure Travels\u00ae hub for curated travel planning and experiences.",
+    "description": "Galveston / Houston is a featured Sunken Treasure Travels® hub for curated travel planning and experiences.",
     "image": "/assets/images/destinations/latin-america-culture.png",
-    "url": "/pages/specialty/destinations.html"
+    "url": "/pages/explore.html?type=destination&id=galveston"
   },
   {
     "id": "atlanta",
@@ -229,9 +232,9 @@
       -84.39,
       33.75
     ],
-    "description": "Atlanta is a featured Sunken Treasure Travels\u00ae hub for curated travel planning and experiences.",
+    "description": "Atlanta is a featured Sunken Treasure Travels® hub for curated travel planning and experiences.",
     "image": "/assets/images/destinations/latin-america-culture.png",
-    "url": "/pages/specialty/destinations.html"
+    "url": "/pages/explore.html?type=destination&id=atlanta"
   },
   {
     "id": "new-york",
@@ -242,9 +245,9 @@
       -74.0,
       40.71
     ],
-    "description": "New York is a featured Sunken Treasure Travels\u00ae hub for curated travel planning and experiences.",
+    "description": "New York is a featured Sunken Treasure Travels® hub for curated travel planning and experiences.",
     "image": "/assets/images/destinations/latin-america-culture.png",
-    "url": "/pages/specialty/destinations.html"
+    "url": "/pages/explore.html?type=destination&id=new-york"
   },
   {
     "id": "las-vegas",
@@ -255,9 +258,9 @@
       -115.14,
       36.17
     ],
-    "description": "Las Vegas is a featured Sunken Treasure Travels\u00ae destination for curated travel planning and experiences.",
+    "description": "Las Vegas is a featured Sunken Treasure Travels® destination for curated travel planning and experiences.",
     "image": "/assets/images/destinations/latin-america-culture.png",
-    "url": "/pages/specialty/destinations.html"
+    "url": "/pages/explore.html?type=destination&id=las-vegas"
   },
   {
     "id": "los-angeles",
@@ -268,9 +271,9 @@
       -118.24,
       34.05
     ],
-    "description": "Los Angeles is a featured Sunken Treasure Travels\u00ae hub for curated travel planning and experiences.",
+    "description": "Los Angeles is a featured Sunken Treasure Travels® hub for curated travel planning and experiences.",
     "image": "/assets/images/destinations/latin-america-culture.png",
-    "url": "/pages/specialty/destinations.html"
+    "url": "/pages/explore.html?type=destination&id=los-angeles"
   },
   {
     "id": "toronto",
@@ -281,22 +284,22 @@
       -79.38,
       43.65
     ],
-    "description": "Toronto is a featured Sunken Treasure Travels\u00ae hub for curated travel planning and experiences.",
+    "description": "Toronto is a featured Sunken Treasure Travels® hub for curated travel planning and experiences.",
     "image": "/assets/images/destinations/latin-america-culture.png",
-    "url": "/pages/specialty/destinations.html"
+    "url": "/pages/explore.html?type=destination&id=toronto"
   },
   {
     "id": "montreal",
-    "name": "Montr\u00e9al",
+    "name": "Montréal",
     "category": "Hub",
     "type": "hub",
     "coordinates": [
       -73.57,
       45.5
     ],
-    "description": "Montr\u00e9al is a featured Sunken Treasure Travels\u00ae hub for curated travel planning and experiences.",
+    "description": "Montréal is a featured Sunken Treasure Travels® hub for curated travel planning and experiences.",
     "image": "/assets/images/destinations/latin-america-culture.png",
-    "url": "/pages/specialty/destinations.html"
+    "url": "/pages/explore.html?type=destination&id=montreal"
   },
   {
     "id": "vancouver",
@@ -307,22 +310,22 @@
       -123.12,
       49.28
     ],
-    "description": "Vancouver is a featured Sunken Treasure Travels\u00ae hub for curated travel planning and experiences.",
+    "description": "Vancouver is a featured Sunken Treasure Travels® hub for curated travel planning and experiences.",
     "image": "/assets/images/destinations/latin-america-culture.png",
-    "url": "/pages/specialty/destinations.html"
+    "url": "/pages/explore.html?type=destination&id=vancouver"
   },
   {
     "id": "cancun",
-    "name": "Canc\u00fan",
+    "name": "Cancún",
     "category": "Destination",
     "type": "destination",
     "coordinates": [
       -86.85,
       21.16
     ],
-    "description": "Canc\u00fan is a featured Sunken Treasure Travels\u00ae destination for curated travel planning and experiences.",
+    "description": "Cancún is a featured Sunken Treasure Travels® destination for curated travel planning and experiences.",
     "image": "/assets/images/destinations/latin-america-culture.png",
-    "url": "/pages/specialty/destinations.html"
+    "url": "/pages/explore.html?type=destination&id=cancun"
   },
   {
     "id": "mexico-city",
@@ -333,9 +336,9 @@
       -99.13,
       19.43
     ],
-    "description": "Mexico City is a featured Sunken Treasure Travels\u00ae destination for curated travel planning and experiences.",
+    "description": "Mexico City is a featured Sunken Treasure Travels® destination for curated travel planning and experiences.",
     "image": "/assets/images/destinations/latin-america-culture.png",
-    "url": "/pages/specialty/destinations.html"
+    "url": "/pages/explore.html?type=destination&id=mexico-city"
   },
   {
     "id": "cartagena",
@@ -346,9 +349,9 @@
       -75.48,
       10.39
     ],
-    "description": "Cartagena is a featured Sunken Treasure Travels\u00ae destination for curated travel planning and experiences.",
+    "description": "Cartagena is a featured Sunken Treasure Travels® destination for curated travel planning and experiences.",
     "image": "/assets/images/destinations/latin-america-culture.png",
-    "url": "/pages/specialty/destinations.html"
+    "url": "/pages/explore.html?type=destination&id=cartagena"
   },
   {
     "id": "rio",
@@ -359,9 +362,9 @@
       -43.17,
       -22.91
     ],
-    "description": "Rio de Janeiro is a featured Sunken Treasure Travels\u00ae destination for curated travel planning and experiences.",
+    "description": "Rio de Janeiro is a featured Sunken Treasure Travels® destination for curated travel planning and experiences.",
     "image": "/assets/images/destinations/latin-america-culture.png",
-    "url": "/pages/specialty/destinations.html"
+    "url": "/pages/explore.html?type=destination&id=rio"
   },
   {
     "id": "buenos-aires",
@@ -372,9 +375,9 @@
       -58.38,
       -34.6
     ],
-    "description": "Buenos Aires is a featured Sunken Treasure Travels\u00ae destination for curated travel planning and experiences.",
+    "description": "Buenos Aires is a featured Sunken Treasure Travels® destination for curated travel planning and experiences.",
     "image": "/assets/images/destinations/latin-america-culture.png",
-    "url": "/pages/specialty/destinations.html"
+    "url": "/pages/explore.html?type=destination&id=buenos-aires"
   },
   {
     "id": "lima",
@@ -385,9 +388,9 @@
       -77.04,
       -12.05
     ],
-    "description": "Lima is a featured Sunken Treasure Travels\u00ae hub for curated travel planning and experiences.",
+    "description": "Lima is a featured Sunken Treasure Travels® hub for curated travel planning and experiences.",
     "image": "/assets/images/destinations/latin-america-culture.png",
-    "url": "/pages/specialty/destinations.html"
+    "url": "/pages/explore.html?type=destination&id=lima"
   },
   {
     "id": "london",
@@ -398,9 +401,9 @@
       -0.13,
       51.51
     ],
-    "description": "London is a featured Sunken Treasure Travels\u00ae hub for curated travel planning and experiences.",
+    "description": "London is a featured Sunken Treasure Travels® hub for curated travel planning and experiences.",
     "image": "/assets/images/destinations/latin-america-culture.png",
-    "url": "/pages/specialty/destinations.html"
+    "url": "/pages/explore.html?type=destination&id=london"
   },
   {
     "id": "paris",
@@ -411,9 +414,9 @@
       2.35,
       48.86
     ],
-    "description": "Paris is a featured Sunken Treasure Travels\u00ae destination for curated travel planning and experiences.",
+    "description": "Paris is a featured Sunken Treasure Travels® destination for curated travel planning and experiences.",
     "image": "/assets/images/destinations/latin-america-culture.png",
-    "url": "/pages/specialty/destinations.html"
+    "url": "/pages/explore.html?type=destination&id=paris"
   },
   {
     "id": "rome",
@@ -424,9 +427,9 @@
       12.5,
       41.9
     ],
-    "description": "Rome is a featured Sunken Treasure Travels\u00ae destination for curated travel planning and experiences.",
+    "description": "Rome is a featured Sunken Treasure Travels® destination for curated travel planning and experiences.",
     "image": "/assets/images/destinations/latin-america-culture.png",
-    "url": "/pages/specialty/destinations.html"
+    "url": "/pages/explore.html?type=destination&id=rome"
   },
   {
     "id": "barcelona",
@@ -437,9 +440,9 @@
       2.17,
       41.39
     ],
-    "description": "Barcelona is a featured Sunken Treasure Travels\u00ae destination for curated travel planning and experiences.",
+    "description": "Barcelona is a featured Sunken Treasure Travels® destination for curated travel planning and experiences.",
     "image": "/assets/images/destinations/latin-america-culture.png",
-    "url": "/pages/specialty/destinations.html"
+    "url": "/pages/explore.html?type=destination&id=barcelona"
   },
   {
     "id": "lisbon",
@@ -450,9 +453,9 @@
       -9.14,
       38.72
     ],
-    "description": "Lisbon is a featured Sunken Treasure Travels\u00ae destination for curated travel planning and experiences.",
+    "description": "Lisbon is a featured Sunken Treasure Travels® destination for curated travel planning and experiences.",
     "image": "/assets/images/destinations/latin-america-culture.png",
-    "url": "/pages/specialty/destinations.html"
+    "url": "/pages/explore.html?type=destination&id=lisbon"
   },
   {
     "id": "athens",
@@ -463,9 +466,9 @@
       23.73,
       37.98
     ],
-    "description": "Athens is a featured Sunken Treasure Travels\u00ae destination for curated travel planning and experiences.",
+    "description": "Athens is a featured Sunken Treasure Travels® destination for curated travel planning and experiences.",
     "image": "/assets/images/destinations/latin-america-culture.png",
-    "url": "/pages/specialty/destinations.html"
+    "url": "/pages/explore.html?type=destination&id=athens"
   },
   {
     "id": "istanbul",
@@ -476,9 +479,9 @@
       28.98,
       41.01
     ],
-    "description": "Istanbul is a featured Sunken Treasure Travels\u00ae hub for curated travel planning and experiences.",
+    "description": "Istanbul is a featured Sunken Treasure Travels® hub for curated travel planning and experiences.",
     "image": "/assets/images/destinations/latin-america-culture.png",
-    "url": "/pages/specialty/destinations.html"
+    "url": "/pages/explore.html?type=destination&id=istanbul"
   },
   {
     "id": "cape-town",
@@ -489,9 +492,9 @@
       18.42,
       -33.93
     ],
-    "description": "Cape Town is a featured Sunken Treasure Travels\u00ae destination for curated travel planning and experiences.",
+    "description": "Cape Town is a featured Sunken Treasure Travels® destination for curated travel planning and experiences.",
     "image": "/assets/images/destinations/latin-america-culture.png",
-    "url": "/pages/specialty/destinations.html"
+    "url": "/pages/explore.html?type=destination&id=cape-town"
   },
   {
     "id": "johannesburg",
@@ -502,9 +505,9 @@
       28.05,
       -26.2
     ],
-    "description": "Johannesburg is a featured Sunken Treasure Travels\u00ae hub for curated travel planning and experiences.",
+    "description": "Johannesburg is a featured Sunken Treasure Travels® hub for curated travel planning and experiences.",
     "image": "/assets/images/destinations/latin-america-culture.png",
-    "url": "/pages/specialty/destinations.html"
+    "url": "/pages/explore.html?type=destination&id=johannesburg"
   },
   {
     "id": "nairobi",
@@ -515,9 +518,9 @@
       36.82,
       -1.29
     ],
-    "description": "Nairobi is a featured Sunken Treasure Travels\u00ae hub for curated travel planning and experiences.",
+    "description": "Nairobi is a featured Sunken Treasure Travels® hub for curated travel planning and experiences.",
     "image": "/assets/images/destinations/latin-america-culture.png",
-    "url": "/pages/specialty/destinations.html"
+    "url": "/pages/explore.html?type=destination&id=nairobi"
   },
   {
     "id": "zanzibar",
@@ -528,9 +531,9 @@
       39.2,
       -6.16
     ],
-    "description": "Zanzibar is a featured Sunken Treasure Travels\u00ae destination for curated travel planning and experiences.",
+    "description": "Zanzibar is a featured Sunken Treasure Travels® destination for curated travel planning and experiences.",
     "image": "/assets/images/destinations/latin-america-culture.png",
-    "url": "/pages/specialty/destinations.html"
+    "url": "/pages/explore.html?type=destination&id=zanzibar"
   },
   {
     "id": "accra",
@@ -541,9 +544,9 @@
       -0.19,
       5.56
     ],
-    "description": "Accra is a featured Sunken Treasure Travels\u00ae hub for curated travel planning and experiences.",
+    "description": "Accra is a featured Sunken Treasure Travels® hub for curated travel planning and experiences.",
     "image": "/assets/images/destinations/latin-america-culture.png",
-    "url": "/pages/specialty/destinations.html"
+    "url": "/pages/explore.html?type=destination&id=accra"
   },
   {
     "id": "victoria-falls",
@@ -554,9 +557,9 @@
       25.86,
       -17.92
     ],
-    "description": "Victoria Falls is a featured Sunken Treasure Travels\u00ae destination for curated travel planning and experiences.",
+    "description": "Victoria Falls is a featured Sunken Treasure Travels® destination for curated travel planning and experiences.",
     "image": "/assets/images/destinations/latin-america-culture.png",
-    "url": "/pages/specialty/destinations.html"
+    "url": "/pages/explore.html?type=destination&id=victoria-falls"
   },
   {
     "id": "bangkok",
@@ -567,9 +570,9 @@
       100.5,
       13.76
     ],
-    "description": "Bangkok is a featured Sunken Treasure Travels\u00ae hub for curated travel planning and experiences.",
+    "description": "Bangkok is a featured Sunken Treasure Travels® hub for curated travel planning and experiences.",
     "image": "/assets/images/destinations/latin-america-culture.png",
-    "url": "/pages/specialty/destinations.html"
+    "url": "/pages/explore.html?type=destination&id=bangkok"
   },
   {
     "id": "phuket",
@@ -580,9 +583,9 @@
       98.39,
       7.88
     ],
-    "description": "Phuket is a featured Sunken Treasure Travels\u00ae destination for curated travel planning and experiences.",
+    "description": "Phuket is a featured Sunken Treasure Travels® destination for curated travel planning and experiences.",
     "image": "/assets/images/destinations/latin-america-culture.png",
-    "url": "/pages/specialty/destinations.html"
+    "url": "/pages/explore.html?type=destination&id=phuket"
   },
   {
     "id": "manila",
@@ -593,9 +596,9 @@
       120.98,
       14.6
     ],
-    "description": "Manila is a featured Sunken Treasure Travels\u00ae hub for curated travel planning and experiences.",
+    "description": "Manila is a featured Sunken Treasure Travels® hub for curated travel planning and experiences.",
     "image": "/assets/images/destinations/latin-america-culture.png",
-    "url": "/pages/specialty/destinations.html"
+    "url": "/pages/explore.html?type=destination&id=manila"
   },
   {
     "id": "tokyo",
@@ -606,9 +609,9 @@
       139.69,
       35.68
     ],
-    "description": "Tokyo is a featured Sunken Treasure Travels\u00ae hub for curated travel planning and experiences.",
+    "description": "Tokyo is a featured Sunken Treasure Travels® hub for curated travel planning and experiences.",
     "image": "/assets/images/destinations/latin-america-culture.png",
-    "url": "/pages/specialty/destinations.html"
+    "url": "/pages/explore.html?type=destination&id=tokyo"
   },
   {
     "id": "bali",
@@ -619,9 +622,9 @@
       115.19,
       -8.41
     ],
-    "description": "Bali is a featured Sunken Treasure Travels\u00ae destination for curated travel planning and experiences.",
+    "description": "Bali is a featured Sunken Treasure Travels® destination for curated travel planning and experiences.",
     "image": "/assets/images/destinations/latin-america-culture.png",
-    "url": "/pages/specialty/destinations.html"
+    "url": "/pages/explore.html?type=destination&id=bali"
   },
   {
     "id": "singapore",
@@ -632,9 +635,9 @@
       103.82,
       1.35
     ],
-    "description": "Singapore is a featured Sunken Treasure Travels\u00ae hub for curated travel planning and experiences.",
+    "description": "Singapore is a featured Sunken Treasure Travels® hub for curated travel planning and experiences.",
     "image": "/assets/images/destinations/latin-america-culture.png",
-    "url": "/pages/specialty/destinations.html"
+    "url": "/pages/explore.html?type=destination&id=singapore"
   },
   {
     "id": "sydney",
@@ -645,8 +648,8 @@
       151.21,
       -33.87
     ],
-    "description": "Sydney is a featured Sunken Treasure Travels\u00ae destination for curated travel planning and experiences.",
+    "description": "Sydney is a featured Sunken Treasure Travels® destination for curated travel planning and experiences.",
     "image": "/assets/images/destinations/latin-america-culture.png",
-    "url": "/pages/specialty/destinations.html"
+    "url": "/pages/explore.html?type=destination&id=sydney"
   }
 ]

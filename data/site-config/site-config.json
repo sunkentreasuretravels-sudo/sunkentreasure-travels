@@ -1,5 +1,18 @@
 {
+  "brandName": "Sunken Treasure Travels®",
+  "legalName": "Sunken Treasure Travels® Ltd",
   "currency": "USD",
   "consultationRequired": true,
-  "externalBookingLinks": true
+  "externalBookingLinks": true,
+  "map": {
+    "showCountryLayer": true,
+    "showDestinationLayer": true,
+    "showHubLayer": true,
+    "showEventLayer": true,
+    "showExperienceLayer": true
+  },
+  "routing": {
+    "experienceBase": "/pages/experience.html",
+    "exploreBase": "/pages/explore.html"
+  }
 }

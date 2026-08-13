@@ -1,0 +1,7 @@
+[
+  {"label":"Home","href":"/index.html"},
+  {"label":"Explore","href":"#map"},
+  {"label":"Experiences","href":"#experiences"},
+  {"label":"Why Us","href":"#why"},
+  {"label":"Start Planning","href":"#contact"}
+]

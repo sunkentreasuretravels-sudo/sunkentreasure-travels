@@ -1,0 +1,24 @@
+[
+  {
+    "id": "the-orange-pair",
+    "name": "The Orange Pair",
+    "type": "featured-experience",
+    "status": "featured",
+    "route": "/pages/experience.html?id=the-orange-pair",
+    "futureDomain": null,
+    "location": "Antigua & Barbuda",
+    "description": "A featured Antigua & Barbuda hospitality experience connected to the Sunken Treasure Travels® destination ecosystem.",
+    "image": "/assets/images/destinations/caribbean-carnival.png"
+  },
+  {
+    "id": "secret-and-hush",
+    "name": "Secret & Hush",
+    "type": "event-experience",
+    "status": "development",
+    "route": "/pages/experience.html?id=secret-and-hush",
+    "futureDomain": null,
+    "location": "Multiple destinations",
+    "description": "A recurring destination event experience designed to be staged in multiple places and explored on its own terms.",
+    "image": "/assets/images/destinations/diaspora-culture.png"
+  }
+]
