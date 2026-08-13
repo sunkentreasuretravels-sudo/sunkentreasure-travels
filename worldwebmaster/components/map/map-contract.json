@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "layers": [
+    "geography",
+    "countries",
+    "destinations",
+    "hubs",
+    "events",
+    "experiences",
+    "marine"
+  ],
+  "interactions": {
+    "countryHover": "identify-country",
+    "countryClick": "open-country",
+    "markerHover": "show-summary",
+    "markerClick": "open-entity",
+    "experienceClick": "open-experience",
+    "marineHover": "show-marine-summary"
+  },
+  "markerPolicy": {
+    "controlledScale": true,
+    "collisionAvoidance": true,
+    "clusterAtLowZoom": true
+  }
+}

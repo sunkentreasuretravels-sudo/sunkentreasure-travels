@@ -1,5 +1,16 @@
 # Changelog
 
+## v3 — Local World Map Engine
+- Removed the external world-atlas dependency from the map.
+- Bundled local country geometry and metadata.
+- Added country hover/click behavior.
+- Added fallback country hit targets for small/missing-geometry countries.
+- Added regional master imagery so destinations no longer all use the same photo.
+- Kept experience routing and destination/event architecture.
+- Reworked zoom/pan to keep markers visually controlled.
+
+# Changelog
+
 ## Map & Experience Engine — Finalization Build
 - Reworked world map zoom so geography and markers behave independently.
 - Added country-name hover tooltips and keyboard interaction.

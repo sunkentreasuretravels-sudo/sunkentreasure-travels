@@ -1,0 +1,29 @@
+{
+  "required": [
+    "consentToPublish"
+  ],
+  "optional": [
+    "name",
+    "email",
+    "caption",
+    "countryId",
+    "destinationId",
+    "eventId",
+    "experienceId"
+  ],
+  "accepted": [
+    "image/*",
+    "video/*"
+  ],
+  "workflow": [
+    "uploaded",
+    "processing",
+    "ai_screened",
+    "pending_review",
+    "approved",
+    "published",
+    "rejected",
+    "archived"
+  ],
+  "rule": "Automated screening may flag content; publication requires human approval."
+}

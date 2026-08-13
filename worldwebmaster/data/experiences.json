@@ -1,0 +1,22 @@
+[
+  {
+    "id": "the-orange-pair",
+    "name": "The Orange Pair",
+    "type": "featured-experience",
+    "status": "featured",
+    "route": "/pages/experience.html?id=the-orange-pair",
+    "domain": null,
+    "relatedCountry": "ATG",
+    "relatedDestination": "antigua-barbuda"
+  },
+  {
+    "id": "secret-and-hush",
+    "name": "Secret & Hush",
+    "type": "event-experience",
+    "status": "planned",
+    "route": "/pages/experience.html?id=secret-and-hush",
+    "domain": null,
+    "relatedCountry": null,
+    "relatedDestination": null
+  }
+]

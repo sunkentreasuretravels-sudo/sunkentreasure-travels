@@ -1,6 +1,1 @@
-export const MAP_CONFIG = {
-  worldAtlas: "https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/countries-110m.json",
-  defaultRegion: "world",
-  enableSoundControl: true,
-  enableEventLayer: true
-};
+export const MAP_CONFIG = { defaultRegion: 'world', enableSoundControl: true, enableEventLayer: true, geometrySource: '/data/destinations/world-geo.json', countrySource: '/data/destinations/countries-full.json' };

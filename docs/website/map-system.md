@@ -1,15 +1,18 @@
-# Map System — Finish Build v2
+# Sunken Treasure Travels Map System — v3
 
-The map has three layers: geography, curated travel markers, and experience routing.
+The map is dependency-free for world geography. Country geometry and country metadata are bundled locally so the map does not disappear when a third-party CDN is unavailable.
 
 ## Geography
-Every country/territory in the world-atlas layer is hoverable, named, keyboard accessible and clickable.
+- Local country geometry: `data/destinations/world-geo.json`
+- Full country metadata: `data/destinations/countries-full.json`
+- Sovereign-state geography is prioritized; additional country/territory records can be added without changing the rendering engine.
 
-## Curated markers
-Destinations, hubs and approved events are curated highlights. They are not intended to imply geographic service limitations.
+## Interaction
+- Hover a country: identify it.
+- Click a country: open country exploration.
+- Hover/click a destination, hub or event: open the preview panel.
+- Zoom/pan: geography moves; markers remain controlled in size.
+- Dense markers cluster and separate as zoom increases.
 
-## Experience routing
-Markers can carry `experienceIds`. The map loads `/data/experiences/experiences.json` and resolves those IDs to a dedicated experience route. A marker with an associated experience gets a primary action to that experience and a secondary action to the underlying destination/event.
-
-## Zoom
-Marker radii remain constant in screen space. Clustering is used at lower zoom levels and progressively relaxes as the user zooms in.
+## Imagery
+Country previews use regional master imagery until dedicated country/destination imagery is available. The system is designed so individual images can later be added without changing the map architecture.

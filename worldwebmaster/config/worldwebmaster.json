@@ -1,0 +1,17 @@
+{
+  "name": "WorldWebMaster",
+  "version": "1.0.0",
+  "purpose": "Reusable world map, media, experience and contribution engine for multiple independent brands.",
+  "principle": "Shared infrastructure, independent brands.",
+  "engines": [
+    "world",
+    "places",
+    "experiences",
+    "media",
+    "intelligence",
+    "marine"
+  ],
+  "deploymentTarget": "Cloudflare",
+  "backend": "Cloudflare Workers + D1 + Images/Stream/R2",
+  "humanApprovalRequired": true
+}

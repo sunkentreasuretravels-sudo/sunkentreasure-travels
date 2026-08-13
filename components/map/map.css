@@ -5,7 +5,7 @@
 .world-map-help{font-size:.86rem;color:rgba(255,255,255,.68);max-width:420px;text-align:right}
 .world-map-canvas{width:100%;height:620px;display:block;touch-action:none}
 .map-ocean{fill:#071a2b}
-.map-country{fill:#18354a;stroke:#6b8da0;stroke-width:.45;vector-effect:non-scaling-stroke;cursor:pointer;transition:fill .15s,opacity .15s}
+.map-country{fill:#18354a;fill-rule:evenodd;stroke:#6b8da0;stroke-width:.55;vector-effect:non-scaling-stroke;cursor:pointer;transition:fill .15s,opacity .15s}.map-country-hit{fill:transparent;stroke:transparent;cursor:pointer}.map-country-hit:focus{fill:rgba(139,215,236,.12);stroke:#fff;stroke-width:1;vector-effect:non-scaling-stroke}.map-gridline{stroke:rgba(143,204,226,.08);stroke-width:.5;vector-effect:non-scaling-stroke;pointer-events:none}
 .map-country:hover,.map-country.is-active{fill:#3b9fbd}
 .map-country:focus{outline:none;fill:#3b9fbd;stroke:#fff;stroke-width:1.2}
 .map-point-layer,.map-cluster-layer{pointer-events:auto}
@@ -43,3 +43,5 @@
 @media(max-width:700px){.world-map-shell{min-height:540px}.world-map-canvas{height:540px}.world-map-header{top:18px;left:18px;right:18px}.world-map-help{display:none}.map-preview{right:14px;left:14px;width:auto}.map-legend{left:18px;bottom:18px;right:18px}.map-sound{right:18px;bottom:18px}.map-zoom-controls{right:18px;top:104px}.map-zoom-readout{right:64px;top:112px}}
 
 .map-preview-actions a[hidden]{display:none}.map-preview-actions a:not(.primary){background:transparent;color:#fff}.map-marker{vector-effect:non-scaling-stroke}.map-point,.map-point-pulse,.map-hub-ring{vector-effect:non-scaling-stroke}
+
+.map-country-layer,.map-country-hit-layer{pointer-events:auto}.map-world-layer{transform-origin:0 0}.map-marker-layer{pointer-events:auto}.map-marker{vector-effect:non-scaling-stroke}.map-country-hit{vector-effect:non-scaling-stroke}
