@@ -1,0 +1,11 @@
+{
+  "purpose": "Media is a separate content layer. Approved customer media can be attached to a destination or experience by ID without changing website code.",
+  "workflow": [
+    "inbox",
+    "processing",
+    "approved",
+    "rejected"
+  ],
+  "approval_required": true,
+  "future_moderation": "Automated safety screening may flag content; human approval remains the publication gate."
+}

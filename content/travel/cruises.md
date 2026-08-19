@@ -1,1 +1,0 @@
-Curated cruise programs, group sailings, cabin positioning, promotional monitoring, payment structuring, onboard events, and pre/post-voyage extensions.

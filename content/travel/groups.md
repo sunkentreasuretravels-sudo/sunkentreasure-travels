@@ -1,1 +1,0 @@
-Delegations, retreats, founder gatherings, hosted sailings, and structured group travel.

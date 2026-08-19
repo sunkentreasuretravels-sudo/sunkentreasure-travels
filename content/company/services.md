@@ -1,9 +1,0 @@
-- Flight planning and routing strategy
-- Hotel and villa reservations
-- Cruise booking and group inventory management
-- Event and festival positioning
-- Safari and multi-destination itinerary design
-- Private transfers and ground logistics
-- Visa guidance
-- Structured payment scheduling
-- Confidential and discreet travel coordination

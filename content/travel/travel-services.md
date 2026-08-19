@@ -1,1 +1,0 @@
-Flight planning, hotels and villas, cruise programs, event and festival positioning, safari and multi-destination design, private transfers, visa guidance, payment scheduling, and discreet coordination.

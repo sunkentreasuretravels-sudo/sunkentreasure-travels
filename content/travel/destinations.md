@@ -1,1 +1,0 @@
-Caribbean, Africa, Latin America, Europe, Asia, North America and globally significant cultural destinations.

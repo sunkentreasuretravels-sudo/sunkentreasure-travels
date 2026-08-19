@@ -1,1 +1,0 @@
-Privacy policy content to be finalized before launch.
