@@ -1,0 +1,9 @@
+INCREMENTAL UPDATE — SUNKEN TREASURE TRAVELS®
+
+Changed only:
+- Start Planning top-right CTA now opens a service selector.
+- $650 is the featured/default planning option.
+- $400, $200 and $100 route to their supplied Square checkouts.
+- Custom Payment is reserved, but the fifth supplied URL duplicates the $650 URL and therefore needs its separate Square link before it can be wired correctly.
+
+The map, media architecture, content structure and other launch components were not redesigned.
