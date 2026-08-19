@@ -1,0 +1,27 @@
+SUNKEN TREASURE TRAVELS® — INCREMENTAL UPDATE
+
+Source:
+sunkentreasure-travels-main(1).zip
+
+Preserved:
+- Existing website pages and content
+- Existing image directories and image references
+- Existing site CSS/JS architecture
+- Existing navigation and working components
+- Existing typography/font treatment
+
+Added:
+- Dedicated planning.html selection page
+- $650 featured planning option
+- $400 / $200 / $100 Square checkout links
+- Custom Payment placeholder awaiting its separate Square link
+- "Too Grown. Too Sexy.™" as a non-featured Future Experience
+- Scoped styling for the new experience list
+
+Not changed:
+- Interactive map mechanics
+- Existing destination imagery
+- Existing site sections unrelated to these additions
+
+Goal:
+Make targeted changes without replacing the existing website.

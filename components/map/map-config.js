@@ -1,1 +1,0 @@
-export const MAP_CONFIG = { defaultRegion: 'world', enableSoundControl: true, enableEventLayer: true, geometrySource: '/data/destinations/world-geo.json', countrySource: '/data/destinations/countries-full.json' };

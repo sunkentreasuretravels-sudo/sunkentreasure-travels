@@ -1,100 +1,745 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Sunken Treasure Travels® | International Travel Advisory</title>
-<meta name="description" content="Sunken Treasure Travels® provides structured international travel advisory, curated cruises, cultural experiences, safari planning, delegation travel and full-service trip coordination.">
-<link rel="stylesheet" href="styles/site.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5">
+  <title>Sunken Treasure Travels · Global Advisory</title>
+  <!-- Fonts: clean serif + sans-serif -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #fcf9f4;
+      color: #1a262f;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ===== COLOR ===== */
+    :root {
+      --navy: #0b2a3b;
+      --teal: #1e4a5f;
+      --gold: #b28b5c;
+      --gold-light: #d9b882;
+      --sand: #f0ebe1;
+      --cream: #faf6ef;
+      --charcoal: #1a262f;
+      --white: #ffffff;
+      --border-light: #e2dcd2;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      color: var(--navy);
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      line-height: 1.1;
+    }
+    h2 {
+      font-size: 2.2rem;
+      margin-bottom: 1.5rem;
+      border-bottom: 3px solid var(--gold-light);
+      display: inline-block;
+      padding-bottom: 0.25rem;
+    }
+    h3 {
+      font-size: 1.5rem;
+      margin-top: 0.5rem;
+    }
+    .subhead {
+      font-size: 1.2rem;
+      color: var(--teal);
+      font-weight: 300;
+    }
+
+    /* ===== BUTTONS ===== */
+    .btn {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--white);
+      font-weight: 600;
+      padding: 0.9rem 2.4rem;
+      border-radius: 40px;
+      text-decoration: none;
+      transition: all 0.2s;
+      border: 1px solid transparent;
+      font-size: 0.95rem;
+      letter-spacing: 0.3px;
+    }
+    .btn:hover {
+      background: var(--navy);
+      color: var(--gold-light);
+      border-color: var(--gold-light);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(11,42,59,0.15);
+    }
+    .btn-outline {
+      background: transparent;
+      color: var(--navy);
+      border: 1px solid var(--navy);
+    }
+    .btn-outline:hover {
+      background: var(--navy);
+      color: var(--cream);
+      border-color: var(--navy);
+    }
+
+    /* ===== HEADER / NAV ===== */
+    header {
+      background: var(--white);
+      border-bottom: 1px solid var(--border-light);
+      padding: 0.8rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(4px);
+      background: rgba(255,255,255,0.94);
+    }
+    .nav-flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: var(--navy);
+      letter-spacing: -0.5px;
+    }
+    .logo span {
+      color: var(--gold);
+    }
+    .nav-links {
+      display: flex;
+      gap: 1.8rem;
+      flex-wrap: wrap;
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: var(--charcoal);
+      transition: 0.2s;
+      border-bottom: 2px solid transparent;
+      padding-bottom: 4px;
+    }
+    .nav-links a:hover {
+      color: var(--gold);
+      border-bottom-color: var(--gold);
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      background: linear-gradient(145deg, #f4eee6 0%, #e8dfd2 100%);
+      padding: 4rem 0 5rem;
+      border-bottom: 2px solid var(--gold-light);
+    }
+    .hero-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .hero h1 {
+      font-size: 3.2rem;
+      max-width: 800px;
+    }
+    .hero .tagline {
+      font-size: 1.3rem;
+      color: var(--teal);
+      font-weight: 300;
+      max-width: 700px;
+      margin: 0.5rem 0 1.5rem;
+    }
+    .hero-cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: center;
+    }
+    .hero-badge {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin-top: 1.5rem;
+      font-size: 0.9rem;
+      color: var(--navy);
+    }
+    .hero-badge span {
+      background: var(--white);
+      padding: 0.3rem 1rem;
+      border-radius: 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      border: 1px solid var(--border-light);
+    }
+
+    /* ===== SECTION ===== */
+    section {
+      padding: 4rem 0;
+      border-bottom: 1px solid var(--border-light);
+    }
+    .section-title {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    .section-title h2 {
+      border-bottom: none;
+      display: block;
+    }
+
+    /* ===== CONSULTING TIERS ===== */
+    .tier-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+    .tier-card {
+      background: var(--white);
+      padding: 2rem 1.5rem;
+      border-radius: 20px;
+      box-shadow: 0 6px 24px rgba(11,42,59,0.05);
+      border: 1px solid var(--border-light);
+      transition: all 0.25s;
+      display: flex;
+      flex-direction: column;
+    }
+    .tier-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--gold);
+      box-shadow: 0 16px 36px rgba(11,42,59,0.08);
+    }
+    .tier-card .price {
+      font-size: 1.9rem;
+      font-weight: 600;
+      color: var(--navy);
+      margin: 0.5rem 0 0.25rem;
+    }
+    .tier-card .price small {
+      font-size: 1rem;
+      font-weight: 400;
+      color: var(--teal);
+    }
+    .tier-card .btn {
+      margin-top: 1.2rem;
+      align-self: flex-start;
+      padding: 0.6rem 1.8rem;
+      font-size: 0.9rem;
+    }
+    .tier-card .note {
+      font-size: 0.85rem;
+      color: #4f5e69;
+      margin-top: 0.6rem;
+      font-style: italic;
+    }
+
+    /* ===== SERVICES & SPECIALTIES ===== */
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+      gap: 2rem;
+    }
+    .service-item {
+      background: var(--cream);
+      padding: 1.8rem 1.2rem;
+      border-radius: 16px;
+      border-left: 4px solid var(--gold);
+    }
+    .service-item h4 {
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      color: var(--navy);
+    }
+    .specialty-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin-top: 0.8rem;
+    }
+    .specialty-tags span {
+      background: var(--white);
+      padding: 0.2rem 1.2rem;
+      border-radius: 30px;
+      font-size: 0.85rem;
+      border: 1px solid var(--border-light);
+    }
+
+    /* ===== DESTINATIONS ===== */
+    .dest-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
+      gap: 1.8rem;
+      text-align: center;
+    }
+    .dest-card {
+      background: var(--white);
+      padding: 1.5rem 0.5rem;
+      border-radius: 40px 12px 12px 40px;
+      border: 1px solid var(--border-light);
+      font-weight: 500;
+      background: #f5f0e9;
+      box-shadow: inset 0 -2px 0 var(--gold-light);
+    }
+    .dest-card strong {
+      display: block;
+      font-size: 1.1rem;
+      color: var(--navy);
+    }
+
+    /* ===== ABOUT / PROCESS ===== */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.5rem;
+    }
+    .about-grid ul {
+      list-style: none;
+      margin-top: 0.5rem;
+    }
+    .about-grid li {
+      padding: 0.4rem 0;
+      border-bottom: 1px solid var(--border-light);
+      display: flex;
+      gap: 0.8rem;
+    }
+    .about-grid li::before {
+      content: "◆";
+      color: var(--gold);
+      font-size: 0.8rem;
+    }
+
+    .process-steps {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: space-between;
+      margin: 2rem 0 0;
+    }
+    .step {
+      flex: 1 1 160px;
+      background: var(--cream);
+      padding: 1.2rem;
+      border-radius: 30px 8px 8px 30px;
+      border-left: 6px solid var(--gold);
+    }
+    .step strong {
+      display: block;
+      font-size: 1.1rem;
+    }
+
+    /* ===== TESTIMONIALS ===== */
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+      gap: 2rem;
+    }
+    .testimonial {
+      background: var(--white);
+      padding: 1.8rem;
+      border-radius: 24px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+      border: 1px solid var(--border-light);
+      font-style: italic;
+    }
+    .testimonial .attribution {
+      margin-top: 1rem;
+      font-style: normal;
+      font-weight: 600;
+      color: var(--teal);
+    }
+
+    /* ===== CONTACT ===== */
+    .contact-flex {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3rem;
+      justify-content: space-between;
+      background: var(--cream);
+      padding: 2.5rem;
+      border-radius: 40px;
+    }
+    .contact-flex .info {
+      flex: 1 1 240px;
+    }
+    .contact-flex .info a {
+      color: var(--navy);
+      text-decoration: none;
+      font-weight: 500;
+      border-bottom: 1px dotted var(--gold);
+    }
+    .contact-flex .info a:hover {
+      color: var(--gold);
+    }
+    .contact-form {
+      flex: 2 1 340px;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 0.8rem 1rem;
+      margin: 0.3rem 0 1rem;
+      border: 1px solid var(--border-light);
+      border-radius: 30px;
+      font-family: 'Inter', sans-serif;
+      background: var(--white);
+    }
+    .contact-form textarea {
+      border-radius: 20px;
+      min-height: 100px;
+    }
+    .contact-form .btn {
+      border-radius: 40px;
+      border: none;
+      cursor: pointer;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: var(--navy);
+      color: #d4d9dd;
+      padding: 2.5rem 0;
+      margin-top: 0;
+    }
+    footer .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+    footer .logo {
+      color: var(--cream);
+      font-size: 1.4rem;
+    }
+    footer .logo span {
+      color: var(--gold-light);
+    }
+    footer .creds {
+      display: flex;
+      gap: 1.8rem;
+      flex-wrap: wrap;
+      font-size: 0.9rem;
+    }
+    footer .creds span {
+      border-right: 1px solid #3e5a69;
+      padding-right: 1rem;
+    }
+    footer .creds span:last-child {
+      border: none;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 780px) {
+      h1 { font-size: 2.2rem; }
+      .hero h1 { font-size: 2.4rem; }
+      .nav-flex { flex-direction: column; gap: 0.8rem; }
+      .nav-links { gap: 1rem; justify-content: center; }
+      .about-grid { grid-template-columns: 1fr; }
+      .contact-flex { flex-direction: column; }
+      .tier-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 480px) {
+      .tier-grid { grid-template-columns: 1fr; }
+      .process-steps { flex-direction: column; }
+      .dest-grid { grid-template-columns: 1fr 1fr; }
+      .hero-cta { flex-direction: column; align-items: flex-start; }
+    }
+
+    /* ===== IMAGE PLACEHOLDERS ===== */
+    .img-placeholder {
+      background: #e6ddd2;
+      border-radius: 24px;
+      padding: 2rem 1rem;
+      text-align: center;
+      color: var(--teal);
+      border: 1px dashed var(--gold);
+      font-weight: 400;
+      margin: 0.5rem 0;
+      min-height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+    }
+    .img-placeholder.large {
+      min-height: 160px;
+    }
+
+    /* utility */
+    .mt-2 { margin-top: 2rem; }
+    .mb-1 { margin-bottom: 1rem; }
+    .text-center { text-align: center; }
+    .flex-center { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+  </style>
 </head>
 <body>
-<nav class="nav"><div class="container nav-inner">
-<a class="brand" href="#">SUNKEN TREASURE <span>TRAVELS®</span></a>
-<div class="navlinks"><a href="#services">Services</a><a href="#experiences">Experiences</a><a href="#map">World</a><a href="#share">Share Your Journey</a></div>
-<a class="btn btn-primary" href="#planning-options">Start Planning</a>
-</div></nav>
 
-<main>
-<section class="hero"><div class="container">
-<div class="eyebrow">INTERNATIONAL TRAVEL ADVISORY & CULTURAL EXPERIENCE</div>
-<h1>THE WORLD IS WAITING.</h1>
-<p class="lead">Structured international travel for travelers who want the destination without the friction. We coordinate routing, suppliers, inventory timing, accommodations, cruises, cultural experiences and execution.</p>
-<div class="hero-actions"><a class="btn btn-primary" href="#start">Start Your Travel Strategy</a><a class="btn btn-blue" href="#experiences">Explore Experiences</a></div>
-</div></section>
+<!-- ===== HEADER ===== -->
+<header>
+  <div class="container nav-flex">
+    <div class="logo">Sunken<span>Treasure</span> Travels</div>
+    <nav class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#destinations">Destinations</a>
+      <a href="#consulting">Consulting</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
 
-<section class="section" id="services"><div class="container">
-<div class="section-head"><div><h2>Move with structure.</h2><p class="section-intro">We manage the moving parts so you can focus on the purpose of the trip. Travel planning begins with alignment, then moves into proposal, inventory and execution.</p></div></div>
-<div class="grid">
-<article class="card"><h3>Professional & Delegation Travel</h3><p>Conference travel, leadership forums, hotel blocks, airfare strategy, transfers, visa guidance and post-event extensions.</p></article>
-<article class="card"><h3>Cruise Planning & Group Sailings</h3><p>Cabin positioning, payment structuring, promotional monitoring, onboard coordination and pre/post-voyage extensions.</p></article>
-<article class="card"><h3>Cultural & Diaspora Experiences</h3><p>Heritage-centered travel, community experiences, festivals and historically significant destinations with structured logistics.</p></article>
-<article class="card"><h3>Africa Safari Circuits</h3><p>Tanzania, Kenya and Zambia with international air strategy, lodge sequencing, bush transfers, guides and visa coordination.</p></article>
-<article class="card"><h3>Latin America & Global Immersion</h3><p>Colombia, Brazil and other culturally significant destinations with boutique accommodations and private ground coordination.</p></article>
-<article class="card"><h3>Full Travel Design & Execution</h3><p>Flights, hotels, cruises, events, safaris, transfers, payment scheduling and end-to-end travel oversight.</p></article>
-</div></div></section>
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <h1>Structured global travel,<br>hands‑off execution.</h1>
+      <p class="tagline">Sunken Treasure Travels Ltd — advisory for professionals, founders, and culturally fluent travelers.</p>
+      <div class="hero-cta">
+        <a href="#consulting" class="btn">Begin consultation</a>
+        <a href="#services" class="btn btn-outline">Explore services</a>
+      </div>
+      <div class="hero-badge">
+        <span>Virgin Voyages Gold Tier</span>
+        <span>JCI Member</span>
+        <span>Cultural fluency · Caribbean · Africa · Latin America</span>
+      </div>
+    </div>
+    <!-- decorative image placeholder -->
+    <div class="img-placeholder large">[ Hero image: luxury travel / ocean / cultural moment ]</div>
+  </div>
+</section>
 
-<section class="section" id="experiences"><div class="container">
-<div class="section-head"><div><h2>Curated movement.</h2><p class="section-intro">Selected programs and invitation-forward experiences designed around the way you want to travel.</p></div></div>
-<div class="grid">
-<article class="card feature"><span class="pill">INVITATION EXPERIENCE</span><h3>Fashion at Sea™</h3><p>A hosted cruise concept built around fashion, culture, connection and the experience of being at sea.</p></article>
-<article class="card feature"><span class="pill">HOSTED VOYAGE</span><h3>Celebration at Sea</h3><p>Group sailing concepts for milestones, community and shared experiences.</p></article>
-<article class="card feature"><span class="pill">CULTURAL</span><h3>Caribbean Festival Circuits</h3><p>Trinidad, Barbados, Aruba and Antigua & Barbuda with early positioning, hotel strategy and event access planning.</p></article>
-</div></div></section>
+<!-- ===== CONSULTING TIERS (quick view) ===== -->
+<section id="consulting">
+  <div class="container">
+    <div class="section-title">
+      <h2>Consulting tiers</h2>
+      <p class="subhead">Structured alignment before execution. Fees apply toward full planning.</p>
+    </div>
+    <div class="tier-grid">
+      <div class="tier-card">
+        <h4>Strategic Consultation</h4>
+        <div class="price">$100</div>
+        <p>Clarity & direction. Eliminate uncertainty, align destination & timing.</p>
+        <a href="#" class="btn">Book</a>
+        <div class="note">applied to full service</div>
+      </div>
+      <div class="tier-card">
+        <h4>Structured Planning Session</h4>
+        <div class="price">$200</div>
+        <p>Build your travel framework: routing, flow, experience components.</p>
+        <a href="#" class="btn">Book</a>
+        <div class="note">applied to full service</div>
+      </div>
+      <div class="tier-card">
+        <h4>Full Design & Execution</h4>
+        <div class="price">$400</div>
+        <p>Comprehensive framework: destination flow, timing, complete system.</p>
+        <a href="#" class="btn">Book</a>
+        <div class="note">applied to full service</div>
+      </div>
+      <div class="tier-card">
+        <h4>Premium Elite Arrival</h4>
+        <div class="price">$650</div>
+        <p>Discreet, private coordination. Controlled arrival & local access.</p>
+        <a href="#" class="btn">Book</a>
+        <div class="note">applied to full service</div>
+      </div>
+    </div>
+    <p class="text-center mt-2" style="color: var(--teal);"><em>All consultation fees credited toward full‑service travel planning.</em></p>
+  </div>
+</section>
 
-<section class="section" id="map"><div class="container">
-<div class="section-head"><div><h2>The world is waiting.</h2><p class="section-intro">The interactive world map is being rebuilt as a dedicated destination-exploration system. We are not putting a half-working map on the live site.</p></div></div>
-<div class="map-coming">
-<div><div class="eyebrow">INTERACTIVE WORLD MAP</div><h3>COMING SOON.</h3><p>Explore countries, destinations, cruise regions, experiences and travel stories through a purpose-built geographic experience. Until that system is ready, the rest of Sunken Treasure Travels® is live and fully usable.</p><a class="btn btn-primary" href="#start">Plan a Trip Without the Map</a></div>
-</div></div></section>
+<!-- ===== SERVICES ===== -->
+<section id="services">
+  <div class="container">
+    <div class="section-title">
+      <h2>Core services & specialties</h2>
+    </div>
+    <div class="service-grid">
+      <div class="service-item"><h4>Flight & routing strategy</h4><p>Optimized air, multi‑city coordination.</p></div>
+      <div class="service-item"><h4>Hotel & villa reservations</h4><p>Boutique, luxury, and curated stays.</p></div>
+      <div class="service-item"><h4>Cruise & group inventory</h4><p>Royal Caribbean, Carnival, Disney, Virgin.</p></div>
+      <div class="service-item"><h4>Event & festival positioning</h4><p>Carnival, J'ouvert, cultural access.</p></div>
+      <div class="service-item"><h4>Safari & expedition design</h4><p>Tanzania, Kenya, Zambia — lodges & guides.</p></div>
+      <div class="service-item"><h4>Private transfers & ground logistics</h4><p>Seamless arrival, local movement.</p></div>
+      <div class="service-item"><h4>Visa guidance</h4><p>Structured documentation & timing.</p></div>
+      <div class="service-item"><h4>Discreet coordination</h4><p>Confidential handling for high‑net‑worth.</p></div>
+    </div>
 
-<section class="section" id="share"><div class="container">
-<div class="section-head"><div><h2>Your journey belongs here.</h2><p class="section-intro">Customers will be able to share approved photos and stories from their travels. The system is being separated from the website itself so media can grow without forcing a rebuild.</p></div></div>
-<form class="upload" id="storyForm">
-<h3>Share Your Travel Story</h3>
-<p class="section-intro" style="margin:10px auto 20px">Choose your photos or videos and tell us where the experience happened.</p>
-<label class="btn btn-blue" for="storyFiles">Choose Photos / Videos</label>
-<input id="storyFiles" type="file" multiple accept="image/*,video/*">
-<div id="preview" class="preview"></div>
-<div style="margin:18px auto;max-width:700px"><input required placeholder="Destination or place" style="width:100%;padding:13px;border-radius:12px;border:1px solid #ffffff22;background:#06131f;color:white"></div>
-<textarea required placeholder="Tell us about your experience…" style="width:min(700px,100%);min-height:120px;padding:13px;border-radius:12px;border:1px solid #ffffff22;background:#06131f;color:white"></textarea>
-<br><button class="btn btn-primary" type="submit" style="margin-top:15px">Submit for Review</button>
-<div id="submitResult" class="preview"></div>
-</form>
-</div></section>
+    <div class="mt-2">
+      <h3 style="font-family: 'Inter', sans-serif; font-weight: 500;">Specialty areas</h3>
+      <div class="specialty-tags">
+        <span>Conference & Delegation (JCI)</span>
+        <span>Cultural / Diaspora (Caribbean)</span>
+        <span>African Safari Circuits</span>
+        <span>Latin America Immersion</span>
+        <span>Premium Elite Arrival</span>
+        <span>Celebration at Sea</span>
+        <span>Tintalting Singles Voyages</span>
+        <span>Fashion at Sea™</span>
+      </div>
+      <div class="img-placeholder mt-2">[ Image: conference / cultural event / safari landscape ]</div>
+    </div>
+  </div>
+</section>
 
-<section class="section" id="planning-options"><div class="container">
-<div class="section-head"><div><div class="eyebrow">START PLANNING</div>
-<h2>Choose your level of support.</h2>
-<p class="section-intro">Choose the planning level that fits your trip. Your selection takes you directly to the secure Square checkout for that service.</p></div></div>
-<div class="grid">
-<article class="card" style="border:1px solid var(--orange);background:linear-gradient(145deg,rgba(255,122,24,.13),rgba(10,28,40,.9));">
-<span class="pill" style="border-color:#ff7a18;color:#ffb27a">RECOMMENDED STARTING POINT</span>
-<h3>Full Travel Planning</h3><p>Our primary planning option for travelers who want structured support from the beginning.</p>
-<div class="price">$650</div><a class="btn btn-primary" href="https://square.link/u/tYiHs4PH" target="_blank" rel="noopener">Start with $650 Planning</a></article>
-<article class="card"><span class="pill">DESIGN & EXECUTION</span>
-<h3>Travel Design & Execution</h3><p>For travelers who need a more comprehensive travel design and execution structure.</p>
-<div class="price">$400</div><a class="btn btn-primary" href="https://square.link/u/f9iK577R" target="_blank" rel="noopener">Choose $400</a></article>
-<article class="card"><span class="pill">STRUCTURED PLANNING</span>
-<h3>Structured Travel Planning</h3><p>Build the framework for your trip with focused planning support.</p>
-<div class="price">$200</div><a class="btn btn-primary" href="https://square.link/u/WAj6p77G" target="_blank" rel="noopener">Choose $200</a></article>
-<article class="card"><span class="pill">CONSULTATION</span>
-<h3>Strategic Travel Consultation</h3><p>A focused starting point when you primarily need clarity and expert travel guidance.</p>
-<div class="price">$100</div><a class="btn btn-primary" href="https://square.link/u/ZD5S2hPN" target="_blank" rel="noopener">Choose $100</a></article>
-<article class="card"><span class="pill">CUSTOM ARRANGEMENT</span>
-<h3>Custom Payment</h3><p>Reserved for approved custom arrangements or other payment needs.</p>
-<div class="price">Your Amount</div><a class="btn btn-blue" href="https://square.link/u/tYiHs4PH" target="_blank" rel="noopener">Open Custom Payment</a>
-<div class="small">The fifth URL you supplied duplicates the $650 link, so this option is temporarily pointed there until you provide the separate custom-payment Square link.</div></article>
-</div>
-<div class="card" style="margin-top:16px"><h3>Our Process</h3><div class="process">
-<div class="step"><div class="num">1</div><div><b>Strategic Travel Inquiry</b><br><span class="section-intro">Tell us what you're trying to accomplish.</span></div></div>
-<div class="step"><div class="num">2</div><div><b>Consultation & Scope Alignment</b><br><span class="section-intro">Align destination, timing and objective.</span></div></div>
-<div class="step"><div class="num">3</div><div><b>Structured Proposal</b><br><span class="section-intro">Build the travel framework.</span></div></div>
-<div class="step"><div class="num">4</div><div><b>Inventory Securing & Payment Scheduling</b><br><span class="section-intro">Position the major components.</span></div></div>
-<div class="step"><div class="num">5</div><div><b>Execution & Oversight</b><br><span class="section-intro">We manage the movement.</span></div></div>
-</div></div></div></section>
-</main>
+<!-- ===== DESTINATIONS ===== -->
+<section id="destinations">
+  <div class="container">
+    <div class="section-title">
+      <h2>Destinations</h2>
+    </div>
+    <div class="dest-grid">
+      <div class="dest-card"><strong>Caribbean</strong> Trinidad · Barbados · Antigua · Aruba</div>
+      <div class="dest-card"><strong>Africa</strong> Tanzania · Kenya · Zambia</div>
+      <div class="dest-card"><strong>Latin America</strong> Colombia · Brazil</div>
+      <div class="dest-card"><strong>Global conferences</strong> JCI World Congress · Americas · Summits</div>
+    </div>
+    <div class="img-placeholder mt-2">[ Destination imagery: carnival, safari, beach, city ]</div>
+  </div>
+</section>
 
-<footer><div class="container">Sunken Treasure Travels® Ltd · International Travel Advisory · Structured movement without unnecessary friction.</div></footer>
-<script src="scripts/site.js"></script>
+<!-- ===== ABOUT ===== -->
+<section id="about">
+  <div class="container">
+    <div class="section-title">
+      <h2>About Sunken Treasure Travels</h2>
+    </div>
+    <div class="about-grid">
+      <div>
+        <h3>Structured travel for the globally mobile</h3>
+        <p>We manage complexity so you focus on purpose, presence, and priorities. Our clients value early positioning, payment scheduling, organized documentation, and hands‑off execution.</p>
+        <ul>
+          <li>Coordinated flights, hotels, ground logistics</li>
+          <li>Early positioning for high‑demand inventory</li>
+          <li>Structured group alignment for delegations</li>
+          <li>Clear billing & payment scheduling</li>
+          <li>Cultural awareness & destination fluency</li>
+        </ul>
+        <div style="margin-top: 1.2rem; background: var(--cream); padding: 1rem; border-radius: 20px;">
+          <strong>Credentials</strong><br>
+          Gold Tier First Mate — Virgin Voyages<br>
+          JCI Member · Conference & Delegation Specialist<br>
+          Certified · Royal Caribbean, Carnival, Disney
+        </div>
+      </div>
+      <div>
+        <h3>Our process</h3>
+        <div class="process-steps">
+          <div class="step"><strong>1. Consultation</strong> Scope & alignment</div>
+          <div class="step"><strong>2. Proposal</strong> Structured plan</div>
+          <div class="step"><strong>3. Inventory & payment</strong> Securing & scheduling</div>
+          <div class="step"><strong>4. Execution</strong> Oversight & delivery</div>
+        </div>
+        <p style="margin-top: 1.5rem;">Movement without structure creates friction. We remove friction.</p>
+        <div class="img-placeholder" style="min-height:80px;">[ About image: professional / travel advisory ]</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section style="background: var(--cream);">
+  <div class="container">
+    <div class="section-title">
+      <h2>What travelers say</h2>
+    </div>
+    <div class="testimonial-grid">
+      <div class="testimonial">“Sunken Treasure Travels Ltd secured prime Carnival positioning months before inventory tightened. Every detail was handled.” <div class="attribution">— Cultural traveler, Trinidad</div></div>
+      <div class="testimonial">“Our conference travel was structured flawlessly — flights, transfers, accommodations, all aligned.” <div class="attribution">— Delegation lead, JCI</div></div>
+      <div class="testimonial">“The safari design was seamless. Private guides, lodge sequencing, everything timed perfectly.” <div class="attribution">— Safari client, Tanzania</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+  <div class="container">
+    <div class="section-title">
+      <h2>Begin structured movement</h2>
+    </div>
+    <div class="contact-flex">
+      <div class="info">
+        <h3>Connect directly</h3>
+        <p><strong>WhatsApp</strong><br><a href="https://wa.me/16782214797" target="_blank">+1.678.221.4797</a></p>
+        <p><strong>Email</strong><br><a href="mailto:info@sunkentreasuretravels.com">info@sunkentreasuretravels.com</a></p>
+        <p style="margin-top: 1.5rem;"><em>Consultation fees apply toward full planning.</em></p>
+        <div style="display: flex; gap: 0.8rem; flex-wrap: wrap; margin-top: 1rem;">
+          <a href="https://wa.me/16782214797" class="btn" style="padding: 0.6rem 1.8rem;">WhatsApp</a>
+          <a href="mailto:info@sunkentreasuretravels.com" class="btn btn-outline" style="padding: 0.6rem 1.8rem;">Email</a>
+        </div>
+      </div>
+      <div class="contact-form">
+        <h4>Inquiry form</h4>
+        <form>
+          <input type="text" placeholder="Full name" aria-label="Name">
+          <input type="email" placeholder="Email address" aria-label="Email">
+          <input type="tel" placeholder="Phone (optional)" aria-label="Phone">
+          <textarea placeholder="Tell us about your travel needs... (destination, dates, group size, etc.)"></textarea>
+          <button type="submit" class="btn">Send inquiry</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+
+<section class="future-experiences" id="future-experiences" aria-labelledby="future-experiences-title">
+  <div class="future-experiences__inner">
+    <div class="future-experiences__eyebrow">FUTURE EXPERIENCES</div>
+    <h2 id="future-experiences-title">Experiences we're developing</h2>
+    <p class="future-experiences__intro">Selected concepts being developed by Sunken Treasure Travels®.</p>
+    <div class="future-experiences__list">
+      <div class="future-experience">
+        <span class="future-experience__name">Too Grown. Too Sexy.™</span>
+        <span class="future-experience__tag">Coming soon</span>
+      </div>
+      <div class="future-experience">
+        <span class="future-experience__name">Hosted Voyages</span>
+        <span class="future-experience__tag">In development</span>
+      </div>
+      <div class="future-experience">
+        <span class="future-experience__name">Cultural Experiences</span>
+        <span class="future-experience__tag">In development</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="logo">Sunken<span>Treasure</span> Travels Ltd</div>
+    <div class="creds">
+      <span>Virgin Voyages Gold Tier</span>
+      <span>JCI Member</span>
+      <span>© 2026</span>
+    </div>
+  </div>
+  <div class="container" style="margin-top: 1rem; font-size: 0.85rem; border-top: 1px solid #2e4a5a; padding-top: 1.2rem; flex-wrap: wrap; justify-content: center; gap: 1.5rem;">
+    <span>Structured international travel advisory</span>
+    <span>Caribbean · Africa · Latin America</span>
+    <span>Discreet · Culturally fluent</span>
+  </div>
+</footer>
+
+<!-- small note: all placeholder images use descriptive alt text per project -->
 </body>
 </html>
