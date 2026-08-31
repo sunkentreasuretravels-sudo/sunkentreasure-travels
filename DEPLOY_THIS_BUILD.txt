@@ -1,0 +1,8 @@
+DROP-IN REPLACEMENT BUILD
+
+Use this build to replace the contents of the GitHub repository root.
+Do not put this ZIP inside the repository.
+Unzip it first, then copy the contents into the repository root and replace existing files when prompted.
+Do not delete the .git folder.
+
+This build preserves the completed Sunken Treasure Travels site structure, styling, Square links, Notion imagery, and travel image library.
