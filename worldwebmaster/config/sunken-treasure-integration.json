@@ -1,8 +1,0 @@
-{
-  "brand": "Sunken Treasure Travels",
-  "brandSourceOfTruth": true,
-  "homepageSourceOfTruth": "existing Sunken Treasure Travels index.html",
-  "engine": "WorldWebMaster",
-  "integrationMode": "additive",
-  "rule": "WorldWebMaster capabilities are integrated without replacing completed brand content."
-}
